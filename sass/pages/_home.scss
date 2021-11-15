@@ -1,0 +1,26 @@
+.burning-village-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+h1 {
+	color: black;
+	font-size: 5em;
+	text-align: center;
+	padding-top: 2em;
+}
+.home-main {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 8em;
+	a {
+		transition: 200ms;
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+}
