@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-.flex-center {
+.flex-center, .main #userOptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +9,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.absolute-center, .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .burning-village-img {
@@ -46,6 +54,47 @@ h1 {
 .home-main a:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+.main {
+  width: 90%;
+}
+
+.main #caractersContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2em;
+}
+
+.main #caracterDialog {
+  margin: 1.5em 0;
+}
+
+.main #userOptions {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main #userOptions .options {
+  color: white;
+  width: 80%;
+  margin-bottom: 1em;
 }
 
 * {

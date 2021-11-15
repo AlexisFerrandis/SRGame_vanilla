@@ -1,0 +1,26 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+}
+.main {
+	width: 90%;
+	@extend .absolute-center;
+	#caractersContainer {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 2em;
+	}
+	#caracterDialog {
+		margin: 1.5em 0;
+	}
+	#userOptions {
+		@extend .flex-center;
+		flex-direction: column;
+		.options {
+			color: white;
+			width: 80%;
+			margin-bottom: 1em;
+		}
+	}
+}
