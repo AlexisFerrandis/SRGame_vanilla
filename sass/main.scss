@@ -1,7 +1,12 @@
+@import "./base/typographie";
+
 @import "./utils/variables";
 @import "./utils/extensions";
 
-@import "./base/typographie";
+@import "./components/buttons";
+@import "./components/input";
+
+@import "./layouts/caracters-display";
 
 @import "./pages/home";
 @import "./pages/classic-stage";
@@ -13,7 +18,6 @@
 	font-family: "Press Start 2P", cursive;
 	font-weight: 500;
 	scroll-behavior: smooth;
-	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 3, 52, 1) 14%, rgba(0, 0, 0, 1) 100%);
 	color: white;
 }
 

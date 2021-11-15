@@ -18,9 +18,12 @@ h1 {
 	justify-content: space-around;
 	margin-top: 8em;
 	a {
-		transition: 200ms;
+		transition: $short-anim;
 		&:hover {
 			transform: scale(1.02);
 		}
 	}
+}
+.background1-1 {
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 3, 52, 1) 14%, rgba(0, 0, 0, 1) 100%);
 }

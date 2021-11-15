@@ -19,6 +19,48 @@
           transform: translate(-50%, -50%);
 }
 
+.options {
+  background-color: #212529;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.options:hover {
+  background-color: black;
+}
+
+#userInput {
+  text-align: center;
+  background-color: #212529;
+  padding: 1rem;
+}
+
+#userInput button {
+  margin-top: 1em;
+}
+
+#caractersContainer {
+  position: relative;
+}
+
+#caractersContainer #caracterOne {
+  position: absolute;
+  left: 0;
+  bottom: -2em;
+}
+
+#caractersContainer #caracterOne {
+  position: absolute;
+  left: 0;
+  bottom: -8em;
+}
+
+#caractersContainer #caracterTwo {
+  position: absolute;
+  right: 0;
+  bottom: -8em;
+}
+
 .burning-village-img {
   position: absolute;
   top: 0;
@@ -56,6 +98,11 @@ h1 {
           transform: scale(1.02);
 }
 
+.background1-1 {
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(14%, #030334), to(black));
+  background: linear-gradient(90deg, #020024 0%, #030334 14%, black 100%);
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,7 +127,7 @@ h1 {
   padding: 0 2em;
 }
 
-.main #caracterDialog {
+.main #dialogContainer {
   margin: 1.5em 0;
 }
 
@@ -105,8 +152,6 @@ h1 {
   font-family: "Press Start 2P", cursive;
   font-weight: 500;
   scroll-behavior: smooth;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(14%, #030334), to(black));
-  background: linear-gradient(90deg, #020024 0%, #030334 14%, black 100%);
   color: white;
 }
 
