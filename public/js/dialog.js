@@ -46,3 +46,13 @@ function displayChevrette() {
 	chevrette.innerHTML = `<img src="../../../public/assets/img/chevrette.gif" alt="" />`;
 	chevrette.style.opacity = "1";
 }
+
+function displayInterlocutor(imgName) {
+	let Interlocutor = document.getElementById("caracterTwo");
+	Interlocutor.innerHTML = `<img src="../../../public/assets/img/${imgName}" alt="" />`;
+	Interlocutor.style.opacity = "1";
+}
+
+function caracterNameColor() {
+	//TODO
+}

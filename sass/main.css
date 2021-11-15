@@ -58,10 +58,25 @@
   transition: 1000ms;
 }
 
+#caractersContainer #caracterOne img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 15em;
+}
+
 #caractersContainer #caracterTwo {
   position: absolute;
   right: 0;
-  bottom: -8em;
+  bottom: -1em;
+  opacity: 0;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+}
+
+#caractersContainer #caracterTwo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 15em;
 }
 
 .background-img {

@@ -11,10 +11,20 @@
 		bottom: -8em;
 		opacity: 0;
 		transition: $mid-anim;
+		& img {
+			object-fit: cover;
+			width: 15em;
+		}
 	}
 	#caracterTwo {
 		position: absolute;
 		right: 0;
-		bottom: -8em;
+		bottom: -1em;
+		opacity: 0;
+		transition: $mid-anim;
+		& img {
+			object-fit: cover;
+			width: 15em;
+		}
 	}
 }
