@@ -9,6 +9,8 @@
 		position: absolute;
 		left: 0;
 		bottom: -8em;
+		opacity: 0;
+		transition: $mid-anim;
 	}
 	#caracterTwo {
 		position: absolute;

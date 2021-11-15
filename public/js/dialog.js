@@ -44,4 +44,5 @@ function dialogActualisation(name, message, a, b, c, d) {
 function displayChevrette() {
 	let chevrette = document.getElementById("caracterOne");
 	chevrette.innerHTML = `<img src="../../../public/assets/img/chevrette.gif" alt="" />`;
+	chevrette.style.opacity = "1";
 }

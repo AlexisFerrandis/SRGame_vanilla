@@ -1,27 +1,58 @@
-whoIsTalking("???");
-letterByLetter("Ho.. Tu es finalement réveillé ? ");
-userOptions(">");
+setTimeout(function () {
+	whoIsTalking("???");
+	letterByLetter("Ho.. Tu es finalement réveillé ? ");
+	userOptions(">");
 
-// name, message, opt1, opt2, opt3, opt4
-document.getElementById(">").addEventListener("click", () => {
-	dialogActualisation("???", "Comment tu te sens?", ">");
+	// name, message, opt1, opt2, opt3, opt4
 	document.getElementById(">").addEventListener("click", () => {
-		dialogActualisation("???", "Tu nous as fait peur...", ">");
+		dialogActualisation("???", "Comment tu te sens?", ">");
 		document.getElementById(">").addEventListener("click", () => {
-			dialogActualisation("chevrette", "Je suis Chevrette, la fée de Saint-Rémy, comment t’appelles tu ?");
-			displayChevrette();
+			dialogActualisation("???", "Tu nous as fait peur...", ">");
+			document.getElementById(">").addEventListener("click", () => {
+				dialogActualisation("chevrette", "Je suis Chevrette, la fée de Saint-Rémy, comment t’appelles tu ?");
+				displayChevrette();
 
-			document.getElementById("userOptions").innerHTML = userNameInput;
-			document.getElementById("userNameSubmit").addEventListener("click", () => {
-				nameValidator();
-				document.getElementById(">").addEventListener("click", () => {
-					dialogActualisation("chevrette", "yolo", ">");
+				document.getElementById("userOptions").innerHTML = userNameInput;
+				document.getElementById("userNameSubmit").addEventListener("click", () => {
+					nameValidator();
+					document.getElementById(">").addEventListener("click", () => {
+						dialogActualisation("chevrette", "Une puissance sombre est en train de s’étendre dans notre village.", ">");
+						document.getElementById(">").addEventListener("click", () => {
+							dialogActualisation("chevrette", "On ne sait pas exactement comment elle est apparue.", ">");
+							document.getElementById(">").addEventListener("click", () => {
+								dialogActualisation("chevrette", "Mais le livre astral parle de la venue d’un guerrier capable de nous libérer de cette malédiction.", ">");
+								document.getElementById(">").addEventListener("click", () => {
+									dialogActualisation("chevrette", `Et je pense que c'est toi, ${localStorage.getItem("userName")}.`, "Pourquoi moi?", "Je ne pense pas non.");
+									let options = document.querySelectorAll(".options");
+									for (let i = 0; i < options.length; i++) {
+										options[i].addEventListener("click", () => {
+											dialogActualisation("chevrette", `Il est stipulé que l’enfant tombé du ciel, par son épée tranchera le malin et débarrassera Saint-Rémy du démon.`, ">");
+											document.getElementById(">").addEventListener("click", () => {
+												dialogActualisation("chevrette", "Je t’en conjure, apportes nous ton aide.", "Très bien", "D'accord", "J'accepte");
+												let options = document.querySelectorAll(".options");
+												for (let i = 0; i < options.length; i++) {
+													options[i].addEventListener("click", () => {
+														dialogActualisation("chevrette", `Merci ${localStorage.getItem("userName")}, tous les habitants de Saint-Rémy te sont reconnaissants.`, ">");
+														document.getElementById(">").addEventListener("click", () => {
+															dialogActualisation("chevrette", "Pour débuter ta quête, nous devrions nous rendre à l’ancien collège pour trouver des informations, là ou tout à commencer…", ">");
+															document.getElementById(">").addEventListener("click", () => {
+																location.href = "../chapter_2/index1-2.html";
+															});
+														});
+													});
+												}
+											});
+										});
+									}
+								});
+							});
+						});
+					});
 				});
 			});
 		});
 	});
-});
-
+}, 2000);
 userNameInput = `
 <div id ="userInput" class="nes-field is-inline userInput">
     <label for="dark_field" style="color:#fff;">Nom d'aventurier</label>

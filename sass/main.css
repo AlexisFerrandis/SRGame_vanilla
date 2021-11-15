@@ -53,6 +53,9 @@
   position: absolute;
   left: 0;
   bottom: -8em;
+  opacity: 0;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
 }
 
 #caractersContainer #caracterTwo {
@@ -61,7 +64,7 @@
   bottom: -8em;
 }
 
-.burning-village-img {
+.background-img {
   position: absolute;
   top: 0;
   left: 0;
