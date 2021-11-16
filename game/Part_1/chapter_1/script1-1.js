@@ -62,7 +62,7 @@ setTimeout(function () {
 
 userNameInput = `
 <div id ="userInput" class="nes-field is-inline userInput">
-    <label for="dark_field" style="color:#fff;">Nom d'aventurier</label>
+    <label for="dark_field" style="color:#fff;">Nom d'aventurier(e)</label>
     <input id="userInputValue" type="text" id="dark_field" class="nes-input is-dark" placeholder="Denis">
     <button id="userNameSubmit" class="nes-btn" href="#">
         ok

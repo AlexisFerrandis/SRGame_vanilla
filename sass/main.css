@@ -78,7 +78,7 @@
 #caractersContainer #caracterTwo {
   position: absolute;
   right: 0;
-  bottom: -1em;
+  bottom: -2em;
   opacity: 0;
   -webkit-transition: 1000ms;
   transition: 1000ms;

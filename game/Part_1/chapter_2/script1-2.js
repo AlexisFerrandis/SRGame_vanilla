@@ -48,6 +48,49 @@ document.getElementById(">").addEventListener("click", () => {
 																			document.getElementById(">").addEventListener("click", () => {
 																				dialogActualisation("Chevrette", `Qu'en penses tu ${userName}`, "Je pense qu’il est fou!", "Il est spécial, mais peut être a-t-il raison?");
 																				document.getElementById("impact-container").innerHTML = `<div class="userImpactChoice"></div>`;
+
+																				document.getElementById(">").addEventListener("click", () => {
+																					localStorage.setItem("isEdelistAlive", false);
+																					document.getElementById("impact-container").remove();
+																					dialogActualisation("Mr Edeliste", `Vous voulez me mettre dans la poubelle c’est ca ?!`, ">");
+																					document.getElementById(">").addEventListener("click", () => {
+																						caracterFalling();
+																						dialogActualisation("", `Il sauta dans la poubelle, puis disparu, comme aspiré par elle`, ">");
+																						document.getElementById(">").addEventListener("click", () => {
+																							dialogActualisation("Chevrette", `Une rencontre étonnante.`, ">");
+																							document.getElementById(">").addEventListener("click", () => {
+																								dialogActualisation("Chevrette", `J’ai une autre piste qu’on pourrait exploiter.`, ">");
+																								document.getElementById(">").addEventListener("click", () => {
+																									dialogActualisation("Chevrette", `Direction la ferme.`, ">");
+																									document.getElementById(">").addEventListener("click", () => {
+																										location.href = "../chapter_3/index1-3.html";
+																									});
+																								});
+																							});
+																						});
+																					});
+																				});
+
+																				document.getElementById("iles").addEventListener("click", () => {
+																					localStorage.setItem("isEdelistAlive", true);
+																					document.getElementById("impact-container").remove();
+																					dialogActualisation("Mr Edeliste", `Merci de m'avoir écouté, j'au une autre piste que vous pourriez exploiter.`, ">");
+																					document.getElementById(">").addEventListener("click", () => {
+																						dialogActualisation("Mr Edeliste", `La ferme pas loin d'ici.`, ">");
+																						document.getElementById(">").addEventListener("click", () => {
+																							dialogActualisation("Chevrette", `Celle qui a brulé il y'a plusieurs années?`, ">");
+																							document.getElementById(">").addEventListener("click", () => {
+																								dialogActualisation("Mr Edeliste", `Celle-là même.`, ">");
+																								document.getElementById(">").addEventListener("click", () => {
+																									dialogActualisation("Chevrette", `Très bien, allons y ${userName}.`, ">");
+																									document.getElementById(">").addEventListener("click", () => {
+																										location.href = "../chapter_3/index1-3.html";
+																									});
+																								});
+																							});
+																						});
+																					});
+																				});
 																			});
 																		});
 																	});
@@ -68,3 +111,9 @@ document.getElementById(">").addEventListener("click", () => {
 		});
 	});
 });
+
+function caracterFalling() {
+	document.getElementById("edel").style.transition = "1000ms";
+	document.getElementById("edel").style.opacity = "0";
+	document.getElementById("edel").style.transform = "translateY(150px)";
+}
