@@ -12,6 +12,7 @@
 		animation: rotator 2s linear infinite;
 		animation-direction: all;
 		z-index: 9;
+		opacity: 0;
 		&:before {
 			content: "";
 			@extend .absolute-center;

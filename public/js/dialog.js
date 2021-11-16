@@ -67,11 +67,32 @@ function displayChevrette() {
 
 // Display the other caracter
 function displayInterlocutor(imgName) {
-	let Interlocutor = document.getElementById("caracterTwo");
-	Interlocutor.innerHTML = `<img id=${get4LetttersForId(imgName)} src="../../../public/assets/img/${imgName}" alt="" />`;
-	Interlocutor.style.opacity = "1";
+	let interlocutor = document.getElementById("caracterTwo");
+	interlocutor.innerHTML = `<img id=${get4LetttersForId(imgName)} src="../../../public/assets/img/${imgName}" alt="" />`;
+	interlocutor.style.opacity = "1";
+}
+
+function displayTheThird(imgName) {
+	let theThird = document.getElementById("caracterThree");
+	theThird.innerHTML = `<img id=${get4LetttersForId(imgName)} src="../../../public/assets/img/${imgName}" alt="" />`;
+	theThird.style.opacity = "1";
 }
 
 function caracterNameColor() {
 	//TODO
+}
+
+// Show when decision have impact (recall to stop)
+function refreshImpactChoice() {
+	let impactChoice = document.getElementById("choiceImpact");
+	impactChoice.style.transition = "200ms";
+	if (impactChoice.classList.contains("inactif")) {
+		impactChoice.classList.add("actif");
+		impactChoice.classList.remove("inactif");
+		impactChoice.style.opacity = 1;
+	} else if (impactChoice.classList.contains("actif")) {
+		impactChoice.style.opacity = 0;
+		impactChoice.classList.remove("actif");
+		impactChoice.classList.add("inactif");
+	}
 }

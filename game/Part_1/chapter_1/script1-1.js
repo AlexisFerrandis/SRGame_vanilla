@@ -24,14 +24,14 @@ setTimeout(function () {
 								document.getElementById(">").addEventListener("click", () => {
 									dialogActualisation("Chevrette", `Et je pense que c'est toi, ${localStorage.getItem("userName")}.`, "Pourquoi moi?", "Je ne pense pas non.");
 									document.getElementById("inpactDisclaimer").innerHTML = `<div class="impact-disclaimer">Une loupiote rouge apparaitra lorsque le choix que vous vous appretez à faire aura un impact sur le reste de l'histoire.</div>`;
-									document.getElementById("impact-container").innerHTML = `<div class="userImpactChoice"></div>`;
+									refreshImpactChoice();
 									document.getElementById("inpactDisclaimer").addEventListener("click", () => {
 										document.getElementById("inpactDisclaimer").remove();
 									});
 									let options = document.querySelectorAll(".options");
 									for (let i = 0; i < options.length; i++) {
 										options[i].addEventListener("click", () => {
-											document.getElementById("impact-container").remove();
+											refreshImpactChoice();
 											dialogActualisation("Chevrette", `Il est stipulé que l’enfant tombé du ciel, par son épée tranchera le malin et débarrassera Saint-Rémy du démon.`, ">");
 											document.getElementById(">").addEventListener("click", () => {
 												dialogActualisation("Chevrette", "Je t’en conjure, apportes nous ton aide.", "Très bien", "D'accord", "J'accepte");

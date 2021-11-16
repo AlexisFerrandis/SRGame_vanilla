@@ -3,11 +3,6 @@
 	#caracterOne {
 		position: absolute;
 		left: 0;
-		bottom: -2em;
-	}
-	#caracterOne {
-		position: absolute;
-		left: 0;
 		bottom: -8em;
 		opacity: 0;
 		transition: $mid-anim;
@@ -16,7 +11,8 @@
 			width: 15em;
 		}
 	}
-	#caracterTwo {
+	#caracterTwo,
+	#caracterThree {
 		position: absolute;
 		right: 0;
 		bottom: -2em;

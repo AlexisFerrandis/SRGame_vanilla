@@ -1,4 +1,5 @@
-localStorage.setItem("userLife", 5);
+localStorage.setItem("userLife", 0);
+refreshUserLife(5);
 
 whoIsTalking("???");
 letterByLetter("Qui va là ?!");
@@ -47,11 +48,12 @@ document.getElementById(">").addEventListener("click", () => {
 																			dialogActualisation("Mr Edeliste", `Je ne suis pas sur, mais c’est à partir de ce moment là que tous ces événements sont apparus.`, ">");
 																			document.getElementById(">").addEventListener("click", () => {
 																				dialogActualisation("Chevrette", `Qu'en penses tu ${userName}`, "Je pense qu’il est fou!", "Il est spécial, mais peut être a-t-il raison?");
-																				document.getElementById("impact-container").innerHTML = `<div class="userImpactChoice"></div>`;
+																				refreshImpactChoice();
 
 																				document.getElementById(">").addEventListener("click", () => {
 																					localStorage.setItem("isEdelistAlive", false);
-																					document.getElementById("impact-container").remove();
+																					refreshImpactChoice();
+																					refreshUserDecision(-1);
 																					dialogActualisation("Mr Edeliste", `Vous voulez me mettre dans la poubelle c’est ca ?!`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
 																						caracterFalling();
@@ -73,7 +75,8 @@ document.getElementById(">").addEventListener("click", () => {
 
 																				document.getElementById("iles").addEventListener("click", () => {
 																					localStorage.setItem("isEdelistAlive", true);
-																					document.getElementById("impact-container").remove();
+																					refreshImpactChoice();
+																					refreshUserDecision(1);
 																					dialogActualisation("Mr Edeliste", `Merci de m'avoir écouté, j'au une autre piste que vous pourriez exploiter.`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
 																						dialogActualisation("Mr Edeliste", `La ferme pas loin d'ici.`, ">");
