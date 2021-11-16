@@ -70,7 +70,6 @@ document.getElementById(">").addEventListener("click", () => {
 																													refreshImpactChoice();
 																													refreshUserDecision(1);
 																													dialogActualisation("Chevrette", `Je connais quelqu'un qui pourra nous en procurer.`, "Et ce sera suffisant?", "Où?");
-																													localStorage.setItem("userDecision", localStorage.getItem("userDecision") + "1");
 																													let options = document.querySelectorAll(".options");
 																													for (let i = 0; i < options.length; i++) {
 																														options[i].addEventListener("click", () => {
@@ -88,6 +87,12 @@ document.getElementById(">").addEventListener("click", () => {
 																																				refreshUserLife(1);
 																																				document.getElementById(">").addEventListener("click", () => {
 																																					dialogActualisation("Chevrette", `Tu es prêt ${userName}?`, ">");
+																																					document.getElementById(">").addEventListener("click", () => {
+																																						dialogActualisation("Chevrette", `Allons y!`, ">");
+																																						document.getElementById(">").addEventListener("click", () => {
+																																							location.href = "../chapter_4/index1-4.html";
+																																						});
+																																					});
 																																				});
 																																			});
 																																		});
@@ -101,8 +106,41 @@ document.getElementById(">").addEventListener("click", () => {
 																												document.getElementById("tues").addEventListener("click", () => {
 																													refreshImpactChoice();
 																													refreshUserDecision(-1);
+																													console.log("Ho u ridiculize the Goat :'(");
 																													dialogActualisation("Chevrette", `Certe, mais magique.`, ">");
-																													localStorage.setItem("userDecision", localStorage.getItem("userDecision") - "1");
+																													document.getElementById(">").addEventListener("click", () => {
+																														dialogActualisation("Chevrette", `Et je connais quelqu'un qui pourra nous aider.`, "Et ce sera suffisant?", "Qui?");
+																														let options = document.querySelectorAll(".options");
+																														for (let i = 0; i < options.length; i++) {
+																															options[i].addEventListener("click", () => {
+																																dialogActualisation("Chevrette", `C'est un ami de longue date et il peut faire des miracles.`, ">");
+																																document.getElementById(">").addEventListener("click", () => {
+																																	dialogActualisation("Chevrette", `Il se trouve dans la péninsule de Gif.`, ">");
+																																	document.getElementById(">").addEventListener("click", () => {
+																																		dialogActualisation("Andréa-Fiona", `Ce ne serait pas...`, ">");
+																																		document.getElementById(">").addEventListener("click", () => {
+																																			dialogActualisation("Chevrette", `Si, Jo le forgereur des montagnes.`, ">");
+																																			document.getElementById(">").addEventListener("click", () => {
+																																				dialogActualisation("Andréa-Fiona", `La route est longue jusqu'à sa demeure.`, ">");
+																																				document.getElementById(">").addEventListener("click", () => {
+																																					dialogActualisation("Andréa-Fiona", `Je ne peux que vous souhaiter bonne chance.`, "Merci");
+																																					document.getElementById(">").addEventListener("click", () => {
+																																						dialogActualisation("Chevrette", `Tu es prêt ${userName}?`, ">");
+																																						document.getElementById(">").addEventListener("click", () => {
+																																							dialogActualisation("Chevrette", `Allons y!`, ">");
+																																							document.getElementById(">").addEventListener("click", () => {
+																																								location.href = "../chapter_4/index1-4.html";
+																																							});
+																																						});
+																																					});
+																																				});
+																																			});
+																																		});
+																																	});
+																																});
+																															});
+																														}
+																													});
 																												});
 																											});
 																										});
