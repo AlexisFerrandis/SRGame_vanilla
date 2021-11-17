@@ -1,0 +1,23 @@
+#chaptersContainer {
+	display: none;
+	@extend .absolute-center;
+	width: 90%;
+	max-width: 750px;
+	max-height: 90%;
+	h3 {
+		text-align: center;
+		margin-bottom: 2em;
+	}
+	#closeChapterBtn {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		font-size: 1.2em;
+	}
+	.chapitreDisplay {
+		a {
+			margin-left: 2em;
+			color: aqua;
+		}
+	}
+}

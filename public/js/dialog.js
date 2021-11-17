@@ -80,9 +80,9 @@ function displayTheThird(imgName) {
 	theThird.style.opacity = "1";
 }
 
+// Color name fct of the character
 function characterNameColor(name) {
-	const nameToColor = name;
-	switch (nameToColor) {
+	switch (name) {
 		case "???":
 			return "white";
 			break;
@@ -91,6 +91,19 @@ function characterNameColor(name) {
 			break;
 		case "Mr Edeliste":
 			return "green";
+			break;
+		case "Andréa-Fiona":
+			return "brown";
+			break;
+		case "Jo":
+			return "grey";
+			break;
+		case "Shinoix":
+			return "yellow";
+			break;
+
+		default:
+			return "white";
 			break;
 	}
 }
@@ -108,4 +121,11 @@ function refreshImpactChoice() {
 		impactChoice.classList.remove("actif");
 		impactChoice.classList.add("inactif");
 	}
+}
+
+// Character falling
+function characterFalling(imgId) {
+	document.getElementById(imgId).style.transition = "1000ms";
+	document.getElementById(imgId).style.opacity = "0";
+	document.getElementById(imgId).style.transform = "translateY(150px)";
 }

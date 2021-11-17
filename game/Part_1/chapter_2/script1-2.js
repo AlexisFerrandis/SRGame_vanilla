@@ -56,7 +56,7 @@ document.getElementById(">").addEventListener("click", () => {
 																					refreshUserDecision(-1);
 																					dialogActualisation("Mr Edeliste", `Vous voulez me mettre dans la poubelle c’est ca ?!`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
-																						characterFalling();
+																						characterFalling("edel");
 																						dialogActualisation("", `Il sauta dans la poubelle, puis disparu, comme aspiré par elle`, ">");
 																						document.getElementById(">").addEventListener("click", () => {
 																							dialogActualisation("Chevrette", `Une rencontre étonnante.`, ">");
@@ -77,11 +77,11 @@ document.getElementById(">").addEventListener("click", () => {
 																					localStorage.setItem("isEdelistAlive", true);
 																					refreshImpactChoice();
 																					refreshUserDecision(1);
-																					dialogActualisation("Mr Edeliste", `Merci de m'avoir écouté, j'au une autre piste que vous pourriez exploiter.`, ">");
+																					dialogActualisation("Mr Edeliste", `Merci de m'avoir écouté, j'ai une autre piste que vous pourriez exploiter.`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
 																						dialogActualisation("Mr Edeliste", `La ferme pas loin d'ici.`, ">");
 																						document.getElementById(">").addEventListener("click", () => {
-																							dialogActualisation("Chevrette", `Celle qui a brulé il y'a plusieurs années?`, ">");
+																							dialogActualisation("Chevrette", `Celle qui a brulé?`, ">");
 																							document.getElementById(">").addEventListener("click", () => {
 																								dialogActualisation("Mr Edeliste", `Celle-là même.`, ">");
 																								document.getElementById(">").addEventListener("click", () => {
@@ -114,9 +114,3 @@ document.getElementById(">").addEventListener("click", () => {
 		});
 	});
 });
-
-function characterFalling() {
-	document.getElementById("edel").style.transition = "1000ms";
-	document.getElementById("edel").style.opacity = "0";
-	document.getElementById("edel").style.transform = "translateY(150px)";
-}

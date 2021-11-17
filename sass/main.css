@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-.flex-center, .impact-disclaimer, .main #userOptions {
+.flex-center, .impact-disclaimer, #gameOver, .main #userOptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.absolute-center, #impact-container .userImpactChoice:before, .main {
+.absolute-center, #parameterContainer, #chaptersContainer, #impact-container .userImpactChoice:before, .main {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,6 +55,70 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 2;
+}
+
+#parameterContainer {
+  display: none;
+  width: 90%;
+  max-width: 750px;
+}
+
+#parameterContainer h3 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#parameterContainer .nes-select {
+  margin-bottom: 2em;
+}
+
+#parameterContainer .checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#parameterContainer .checkbox-container input {
+  margin-bottom: 2em;
+}
+
+#parameterContainer #closeOptBtn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.2em;
+}
+
+#parameterContainer #userRename {
+  margin-top: 2em;
+}
+
+#chaptersContainer {
+  display: none;
+  width: 90%;
+  max-width: 750px;
+  max-height: 90%;
+}
+
+#chaptersContainer h3 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#chaptersContainer #closeChapterBtn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.2em;
+}
+
+#chaptersContainer .chapitreDisplay a {
+  margin-left: 2em;
+  color: aqua;
 }
 
 #charactersContainer {
@@ -169,6 +233,38 @@
   }
 }
 
+#gameOver {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.9;
+}
+
+#gameOver p {
+  font-size: 4em;
+}
+
+#gameOver p span {
+  color: red;
+}
+
+#gameOver .u-dead {
+  font-size: 1em;
+  margin-bottom: 8em;
+}
+
+#gameOver button {
+  margin-bottom: 1em;
+}
+
 .background-img {
   position: absolute;
   top: 0;
@@ -210,9 +306,23 @@ h1 {
   background-color: black;
 }
 
-.background1-1 {
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(14%, #030334), to(black));
-  background: linear-gradient(90deg, #020024 0%, #030334 14%, black 100%);
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 16em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 12em auto;
+  font-size: 0.7em;
+}
+
+footer #homeOptionsBtn {
+  margin-bottom: 3em;
 }
 
 .header {
@@ -254,6 +364,11 @@ h1 {
   color: white;
   width: 80%;
   margin-bottom: 1em;
+}
+
+.background1-1 {
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(14%, #030334), to(black));
+  background: linear-gradient(90deg, #020024 0%, #030334 14%, black 100%);
 }
 
 * {

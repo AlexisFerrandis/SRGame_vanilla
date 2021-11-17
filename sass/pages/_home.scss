@@ -27,6 +27,14 @@ h1 {
 		background-color: black;
 	}
 }
-.background1-1 {
-	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 3, 52, 1) 14%, rgba(0, 0, 0, 1) 100%);
+footer {
+	display: flex;
+	flex-direction: column;
+	width: 16em;
+	justify-content: space-around;
+	margin: 12em auto;
+	font-size: 0.7em;
+	#homeOptionsBtn {
+		margin-bottom: 3em;
+	}
 }

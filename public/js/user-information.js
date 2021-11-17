@@ -63,9 +63,29 @@ function refreshUserLife(val) {
             <i class="nes-icon is-medium is-transparent heart"></i>`;
 			break;
 		case 0:
-			console.log("TODO");
+			gameOver();
 			break;
 		default:
 			console.log("Error : unvalid lifebar");
 	}
+}
+
+// If user is die, button to retry or go home...
+function gameOver() {
+	document.body.innerHTML += `
+	<div id=gameOver>
+		<p><span>GAME</span> OVER</p>
+		<p class="u-dead">u dead :(</p>
+		<button id="dieAndRetry" type="button" class="nes-btn ">Retry</button>
+		<button id="toHome" type="button" class="nes-btn ">Retour au menu</button>
+	<div>
+	`;
+	document.getElementById("dieAndRetry").addEventListener("click", () => {
+		refreshUserLife(3);
+		window.location.reload();
+	});
+	document.getElementById("toHome").addEventListener("click", () => {
+		refreshUserLife(3);
+		window.location.href = "../../../index.html";
+	});
 }
