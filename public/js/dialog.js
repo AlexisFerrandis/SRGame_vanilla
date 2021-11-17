@@ -1,30 +1,31 @@
 /*** DIALOG FONCTION ***/
 
-// Display the name and speech of the talking caracter, and users options
+// Display the name and speech of the talking character, and users options
 function dialogActualisation(name, message, a, b, c, d) {
-	let cacarcterName = document.getElementById("caracterName");
-	let caracterSpeech = document.getElementById("caracterDialog");
+	let cacarcterName = document.getElementById("characterName");
+	let characterSpeech = document.getElementById("characterDialog");
 	let BtnContainer = document.getElementById("userOptions");
 
 	cacarcterName.innerHTML = "";
-	caracterSpeech.innerHTML = "";
+	characterSpeech.innerHTML = "";
 	BtnContainer.innerHTML = "";
 
 	cacarcterName = whoIsTalking(name);
 	BtnContainer = userOptions(a, b, c, d);
-	caracterSpeech = letterByLetter(message);
+	characterSpeech = letterByLetter(message);
 }
 
 // Call to print the name
 function whoIsTalking(name) {
-	document.getElementById("caracterName").innerHTML = name;
+	document.getElementById("characterName").innerHTML = name;
+	document.getElementById("characterName").style.color = characterNameColor(name);
 }
 
 // Call to print the message letter by letter
 function letterByLetter(message) {
 	let i = 0;
 	let interval = setInterval(function () {
-		document.getElementById("caracterDialog").innerHTML += message.charAt(i);
+		document.getElementById("characterDialog").innerHTML += message.charAt(i);
 		i++;
 		if (i > message.length) {
 			clearInterval(interval);
@@ -56,30 +57,42 @@ function get4LetttersForId(string) {
 	return fourthLetters;
 }
 
-/*** CARACTER DISPLAY AND INTERACTION ***/
+/*** CHARACTER DISPLAY AND INTERACTION ***/
 
 // Display the goat
 function displayChevrette() {
-	let chevrette = document.getElementById("caracterOne");
+	let chevrette = document.getElementById("characterOne");
 	chevrette.innerHTML = `<img src="../../../public/assets/img/chevrette.gif" alt="" />`;
 	chevrette.style.opacity = "1";
 }
 
-// Display the other caracter
+// Display the other character
 function displayInterlocutor(imgName) {
-	let interlocutor = document.getElementById("caracterTwo");
+	let interlocutor = document.getElementById("characterTwo");
 	interlocutor.innerHTML = `<img id=${get4LetttersForId(imgName)} src="../../../public/assets/img/${imgName}" alt="" />`;
 	interlocutor.style.opacity = "1";
 }
 
+// If 3rd character to display
 function displayTheThird(imgName) {
-	let theThird = document.getElementById("caracterThree");
+	let theThird = document.getElementById("characterThree");
 	theThird.innerHTML = `<img id=${get4LetttersForId(imgName)} src="../../../public/assets/img/${imgName}" alt="" />`;
 	theThird.style.opacity = "1";
 }
 
-function caracterNameColor() {
-	//TODO
+function characterNameColor(name) {
+	const nameToColor = name;
+	switch (nameToColor) {
+		case "???":
+			return "white";
+			break;
+		case "Chevrette":
+			return "purple";
+			break;
+		case "Mr Edeliste":
+			return "green";
+			break;
+	}
 }
 
 // Show when decision have impact (recall to stop)

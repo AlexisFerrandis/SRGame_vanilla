@@ -56,7 +56,7 @@ document.getElementById(">").addEventListener("click", () => {
 																					refreshUserDecision(-1);
 																					dialogActualisation("Mr Edeliste", `Vous voulez me mettre dans la poubelle c’est ca ?!`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
-																						caracterFalling();
+																						characterFalling();
 																						dialogActualisation("", `Il sauta dans la poubelle, puis disparu, comme aspiré par elle`, ">");
 																						document.getElementById(">").addEventListener("click", () => {
 																							dialogActualisation("Chevrette", `Une rencontre étonnante.`, ">");
@@ -115,7 +115,7 @@ document.getElementById(">").addEventListener("click", () => {
 	});
 });
 
-function caracterFalling() {
+function characterFalling() {
 	document.getElementById("edel").style.transition = "1000ms";
 	document.getElementById("edel").style.opacity = "0";
 	document.getElementById("edel").style.transform = "translateY(150px)";

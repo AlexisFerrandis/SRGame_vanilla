@@ -25,6 +25,7 @@ document.getElementById(">").addEventListener("click", () => {
 								dialogActualisation("Jo", "Vous allez tout me raconter, je vous sers à boire?", "De l'eau pour moi.", "Une cervoise de la région.", "Un de vos cocktail de renom.");
 
 								document.getElementById(">").addEventListener("click", () => {
+									refreshImpactChoice();
 									dialogActualisation("Chevrette", "Un kaphéo KK s'il te plaît.", ">");
 									document.getElementById(">").addEventListener("click", () => {
 										dialogActualisation("Jo", "Vous devez être fatigué je comprends.", ">");
@@ -65,21 +66,21 @@ document.getElementById(">").addEventListener("click", () => {
 																											options[i].addEventListener("click", () => {
 																												dialogActualisation("Jo", `C'est le territoire des shinoix, ils sont malins et essaierons de vous dépouiller avec leurs énigmes...`, ">");
 																												document.getElementById(">").addEventListener("click", () => {
-																													dialogActualisation("jo", "Mais si vous répondez correctement, le Beskar sera à vous.");
+																													dialogActualisation("jo", "Mais si vous répondez correctement, le Beskar sera à vous.", ">");
 																													document.getElementById(">").addEventListener("click", () => {
 																														dialogActualisation("jo", "Passez la nuit ici, vous repartirez demain avec les idées claires.", "C'est le plus raisonnable.", "Ne perdons pas de temps !");
 
 																														document.getElementById(">").addEventListener("click", () => {
-																															dialogActualisation("Chevrette", `Nous partirons à l'aube`, ">");
+																															dialogActualisation("Chevrette", `Nous partirons à l'aube.`, ">");
 																															document.getElementById(">").addEventListener("click", () => {
-																																location.href("../chapter_5/index1-5.html");
+																																window.location.href = "../chapter_5/index1-5.html";
 																															});
 																														});
 
 																														document.getElementById("nepe").addEventListener("click", () => {
 																															dialogActualisation("Chevrette", `Je suis prète !`, ">");
 																															document.getElementById(">").addEventListener("click", () => {
-																																location.href("../chapter_5/index1-5.html");
+																																window.location.href = "../chapter_5/index1-5.html";
 																															});
 																														});
 																													});
@@ -106,6 +107,7 @@ document.getElementById(">").addEventListener("click", () => {
 								});
 
 								document.getElementById("unec").addEventListener("click", () => {
+									refreshImpactChoice();
 									dialogActualisation("Chevrette", "Je prendrais bien un Vodkachino.", ">");
 									document.getElementById(">").addEventListener("click", () => {
 										dialogActualisation("Jo", "Fidèle à elle même.", ">");
@@ -146,21 +148,21 @@ document.getElementById(">").addEventListener("click", () => {
 																											options[i].addEventListener("click", () => {
 																												dialogActualisation("Jo", `C'est le territoire des shinoix, ils sont malins et essaierons de vous dépouiller avec leurs énigmes...`, ">");
 																												document.getElementById(">").addEventListener("click", () => {
-																													dialogActualisation("jo", "Mais si vous répondez correctement, le Beskar sera à vous.");
+																													dialogActualisation("jo", "Mais si vous répondez correctement, le Beskar sera à vous.", ">");
 																													document.getElementById(">").addEventListener("click", () => {
 																														dialogActualisation("jo", "Passez la nuit ici, vous repartirez demain avec les idées claires.", "C'est le plus raisonnable.", "Ne perdons pas de temps !");
 
 																														document.getElementById(">").addEventListener("click", () => {
 																															dialogActualisation("Chevrette", `Nous partirons à l'aube`, ">");
 																															document.getElementById(">").addEventListener("click", () => {
-																																location.href("../chapter_5/index1-5.html");
+																																window.location.href = "../chapter_5/index1-5.html";
 																															});
 																														});
 
 																														document.getElementById("nepe").addEventListener("click", () => {
 																															dialogActualisation("Chevrette", `Je suis prète !`, ">");
 																															document.getElementById(">").addEventListener("click", () => {
-																																location.href("../chapter_5/index1-5.html");
+																																window.location.href = "../chapter_5/index1-5.html";
 																															});
 																														});
 																													});
@@ -188,6 +190,7 @@ document.getElementById(">").addEventListener("click", () => {
 
 								document.getElementById("unde").addEventListener("click", () => {
 									refreshUserLife(1);
+									refreshImpactChoice();
 									dialogActualisation("Chevrette", "Je prendrais la même chose.", ">");
 									document.getElementById(">").addEventListener("click", () => {
 										dialogActualisation("Jo", "Ma réputation me précède à ce que je vois.", ">");
@@ -238,7 +241,7 @@ document.getElementById(">").addEventListener("click", () => {
 																																options[i].addEventListener("click", () => {
 																																	dialogActualisation("Jo", `C'est le territoire des shinoix, ils sont malins et essaierons de vous dépouiller avec leurs énigmes...`, ">");
 																																	document.getElementById(">").addEventListener("click", () => {
-																																		dialogActualisation("jo", "Mais si vous répondez correctement, le Beskar sera à vous.");
+																																		dialogActualisation("jo", "Mais si vous répondez correctement, le Beskar sera à vous.", ">");
 																																		document.getElementById(">").addEventListener("click", () => {
 																																			dialogActualisation("jo", "Passez la nuit ici, vous repartirez demain avec les idées claires.", "TentEndS cHevreTte, tU pArleS le mAndarIN toa?");
 
@@ -251,7 +254,7 @@ document.getElementById(">").addEventListener("click", () => {
 																																						document.getElementById(">").addEventListener("click", () => {
 																																							dialogActualisation("Chevrette", `On.. On partira demain.`, "hOWI, je.. zZZ...");
 																																							document.getElementById(">").addEventListener("click", () => {
-																																								location.href("../chapter_5/index1-5.html");
+																																								window.location.href = "../chapter_5/index1-5.html";
 																																							});
 																																						});
 																																					});

@@ -30,6 +30,13 @@
 }
 
 #userInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   background-color: #212529;
   padding: 1rem;
@@ -50,11 +57,11 @@
   z-index: 2;
 }
 
-#caractersContainer {
+#charactersContainer {
   position: relative;
 }
 
-#caractersContainer #caracterOne {
+#charactersContainer #characterOne {
   position: absolute;
   left: 0;
   bottom: -8em;
@@ -63,14 +70,14 @@
   transition: 1000ms;
 }
 
-#caractersContainer #caracterOne img {
+#charactersContainer #characterOne img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 15em;
 }
 
-#caractersContainer #caracterTwo,
-#caractersContainer #caracterThree {
+#charactersContainer #characterTwo,
+#charactersContainer #characterThree {
   position: absolute;
   right: 0;
   bottom: -2em;
@@ -79,8 +86,8 @@
   transition: 1000ms;
 }
 
-#caractersContainer #caracterTwo img,
-#caractersContainer #caracterThree img {
+#charactersContainer #characterTwo img,
+#charactersContainer #characterThree img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 15em;
@@ -199,6 +206,10 @@ h1 {
           transform: scale(1.02);
 }
 
+.home-main .home-btn {
+  background-color: black;
+}
+
 .background1-1 {
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(14%, #030334), to(black));
   background: linear-gradient(90deg, #020024 0%, #030334 14%, black 100%);
@@ -218,7 +229,7 @@ h1 {
   width: 90%;
 }
 
-.main #caractersContainer {
+.main #charactersContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
