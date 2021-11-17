@@ -104,6 +104,9 @@ function characterNameColor(name) {
 		case "XinJinPin FinLin":
 			return "gold";
 			break;
+		case "Lettre de V":
+			return "darkslateblue";
+			break;
 
 		default:
 			return "white";

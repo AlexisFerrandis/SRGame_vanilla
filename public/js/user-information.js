@@ -89,3 +89,10 @@ function gameOver() {
 		window.location.href = "../../../index.html";
 	});
 }
+
+// Put a sword in inventory
+function thisIsMySword(swordImgName) {
+	document.getElementById("inventaireContainer").innerHTML = `
+	<img id="actualSword" src="../../../public/assets/img/${swordImgName}"/>
+	`;
+}

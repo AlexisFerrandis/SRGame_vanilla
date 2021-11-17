@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.absolute-center, #parameterContainer, #chaptersContainer, #impact-container .userImpactChoice:before, .main {
+.absolute-center, #theSwordApparition, #parameterContainer, #chaptersContainer, #impact-container .userImpactChoice:before, .main {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,6 +55,10 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 2;
+}
+
+#theSwordApparition {
+  pointer-events: none;
 }
 
 #parameterContainer {
@@ -231,6 +235,10 @@
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
   }
+}
+
+#actualSword {
+  width: 70px;
 }
 
 #gameOver {
