@@ -101,6 +101,9 @@ function characterNameColor(name) {
 		case "Shinoix":
 			return "yellow";
 			break;
+		case "XinJinPin FinLin":
+			return "gold";
+			break;
 
 		default:
 			return "white";
