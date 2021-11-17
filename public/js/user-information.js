@@ -1,7 +1,8 @@
-userName = localStorage.getItem("userName");
-userLife = localStorage.getItem("userLife");
+const userName = localStorage.getItem("userName");
+const userLife = localStorage.getItem("userLife");
+const userDecision = localStorage.getItem("userDecision");
 
-isEdelistAlive = localStorage.getItem("isEdelistAlive");
+const isEdelistAlive = localStorage.getItem("isEdelistAlive");
 
 function refreshUserDecision(val) {
 	let userDecision = localStorage.getItem("userDecision");
@@ -13,6 +14,12 @@ function refreshUserLife(val) {
 	const lifeContainer = document.getElementById("lifeContainer");
 	let userLife = localStorage.getItem("userLife");
 	let userUpdate = parseInt(userLife) + val;
+	if (userUpdate > 5) {
+		userUpdate = 5;
+	}
+	if (userUpdate < 0) {
+		userUpdate = 0;
+	}
 	localStorage.setItem("userLife", userUpdate);
 	switch (userUpdate) {
 		case 5:
@@ -59,6 +66,6 @@ function refreshUserLife(val) {
 			console.log("TODO");
 			break;
 		default:
-			console.log("TODO");
+			console.log("Error : unvalid lifebar");
 	}
 }
