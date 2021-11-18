@@ -62,3 +62,4 @@ function lightDisplay() {
     </div>
     `;
 }
+function whiteScreen() {}

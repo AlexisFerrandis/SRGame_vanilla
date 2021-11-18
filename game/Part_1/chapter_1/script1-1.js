@@ -1,3 +1,5 @@
+playChapterMusic(`principal_menu_theme.mp3`);
+
 setTimeout(function () {
 	whoIsTalking("???");
 	letterByLetter("Ho.. Tu es finalement réveillé ? ");

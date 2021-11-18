@@ -7,27 +7,28 @@ window.onload = document.body.innerHTML +=
         <div id="closeOptBtn">X</div>
         <div class="parameter-display>
             <div style="background-color:#212529; padding: 1rem 1.2rem 1rem 1rem;width:calc(100% + 8px)">
-                <label for="dark_select" style="color:#fff">Volume</label>
+                <label for="volumeCtrl" style="color:#fff">Volume</label>
                 <div class="nes-select is-dark">
-                    <select required id="dark_select">
+                    <select required id="volumeCtrl">
                         <option value="" disabled selected hidden>Select...</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="0">Muet</option>
+                        <option value="1">Pas très fort</option>
+                        <option value="2">Un peu plus fort</option>
+                        <option value="3">Y'a un peu de volume</option>
+                        <option value="4">Au max</option>
                     </select>
                 </div>
             </div>
 
             <div style="background-color:#212529; padding: 1rem 1.2rem 1rem 1rem;width:calc(100% + 8px)">
-                <label for="dark_select" style="color:#fff">Vitesse du texte</label>
+                <label for="textSpeedCtrl" style="color:#fff">Vitesse du texte</label>
                 <div class="nes-select is-dark">
-                    <select required id="dark_select">
+                    <select required id="textSpeedCtrl">
                         <option value="" disabled selected hidden>Select...</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="0">Leeeennnnnt</option>
+                        <option value="1">Un peu lent</option>
+                        <option value="2">Normal</option>
+                        <option value="3">I'm the fast</option>
                     </select>
                 </div>
             </div>
@@ -76,12 +77,26 @@ window.onload = document.body.innerHTML +=
 </div>
 `;
 
+/*** OPTIONS SELECTION ***/
+
 // Open and close options
 document.getElementById("homeOptionsBtn").addEventListener("click", () => {
 	document.getElementById("parameterContainer").style.display = "block";
 });
 document.getElementById("closeOptBtn").addEventListener("click", () => {
 	document.getElementById("parameterContainer").style.display = "none";
+});
+
+// Volume controler
+document.getElementById("volumeCtrl").addEventListener("input", () => {
+	let volumeChosen = document.getElementById("volumeCtrl").value;
+	localStorage.setItem("volumeChosen", volumeChosen);
+});
+
+// Text speed controler
+document.getElementById("textSpeedCtrl").addEventListener("input", () => {
+	let textSpeedChosen = document.getElementById("textSpeedCtrl").value;
+	localStorage.setItem("textSpeedChosen", textSpeedChosen);
 });
 
 /*** CHAPTERS SELECTION ***/

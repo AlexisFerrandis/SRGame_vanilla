@@ -30,7 +30,7 @@ function letterByLetter(message) {
 		if (i > message.length) {
 			clearInterval(interval);
 		}
-	}, 10);
+	}, setUserTextSpeed());
 }
 
 // Display options with Id to get story's branch
@@ -47,6 +47,28 @@ function userOptions(opt1 = "", opt2 = "", opt3 = "", opt4 = "") {
 	}
 	if (opt4 != "") {
 		userOptions.innerHTML += `<div id="${get4LetttersForId(opt4)}" class="nes-btn options">${opt4}</div>`;
+	}
+}
+
+// Return text speed chosen
+function setUserTextSpeed() {
+	let userChoice = localStorage.getItem("textSpeedChosen");
+	switch (userChoice) {
+		case "0":
+			return 80;
+			break;
+		case "1":
+			return 60;
+			break;
+		case "2":
+			return 40;
+			break;
+		case "3":
+			return 10;
+			break;
+		default:
+			return 40;
+			break;
 	}
 }
 
@@ -147,4 +169,33 @@ function characterFalling(imgId) {
 	document.getElementById(imgId).style.transition = "1000ms";
 	document.getElementById(imgId).style.opacity = "0";
 	document.getElementById(imgId).style.transform = "translateY(150px)";
+}
+
+/*** AUDIO MANIPULATION ***/
+function playChapterMusic(songName) {
+	musicLevel = new Audio(`../../../public/assets/song/${songName}`);
+
+	let gameVolume = localStorage.getItem("volumeChosen");
+	switch (gameVolume) {
+		case "0":
+			musicLevel.volume = 0;
+			break;
+		case "1":
+			musicLevel.volume = 0.2;
+			break;
+		case "2":
+			musicLevel.volume = 0.4;
+			break;
+		case "3":
+			musicLevel.volume = 0.7;
+			break;
+		case "4":
+			musicLevel.volume = 1;
+			break;
+		default:
+			musicLevel.volume = 0.1;
+			break;
+	}
+	musicLevel.play();
+	musicLevel.loop = true;
 }
