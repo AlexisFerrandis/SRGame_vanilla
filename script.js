@@ -68,6 +68,7 @@ window.onload = document.body.innerHTML +=
             <a href="./game/Part_1/chapter_6/index1-6.html">6. Divinilame<a></br>
             <a href="./game/Part_1/chapter_7/index1-7.html">7. Noblesse authentique</br>
             <a href="./game/Part_1/chapter_7-story/index1-7-story.html">0. Raconte moi une histoire</br>
+            <a href="./game/Part_1/chapter_8/index1-8.html">8. Smol doggo</br>
         </div>
     </div>
 </div>

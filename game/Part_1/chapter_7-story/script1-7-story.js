@@ -25,6 +25,30 @@ document.getElementById(">").addEventListener("click", () => {
 								lightDisplay();
 								document.getElementById(">").addEventListener("click", () => {
 									storyTextDisplay("Et de cette fusion naquis…");
+									whiteScreen();
+									setTimeout(() => {
+										clearForSainRembrion();
+										storyTextDisplay("Le SainRembrion, diffuseur de cauchemars… ");
+										sainRembrionAppear();
+										document.getElementById(">").addEventListener("click", () => {
+											storyTextDisplay("Il absorbe l’énergie et la positivité des êtres vivants jusqu’à leurs dernières goutte.");
+											document.getElementById(">").addEventListener("click", () => {
+												storyTextDisplay("Vous comprenez maintenant pourquoi il y’a cette atmosphère étrange.");
+												document.getElementById(">").addEventListener("click", () => {
+													storyTextDisplay("Et pourquoi la ville court un grand danger.");
+													document.getElementById(">").addEventListener("click", () => {
+														storyTextDisplay("Il existe une manière de le réduire à néant.");
+														document.getElementById(">").addEventListener("click", () => {
+															storyTextDisplay("En terrassant ses trois parents.");
+															document.getElementById(">").addEventListener("click", () => {
+																location.href = "../chapter_8/index1-8.html";
+															});
+														});
+													});
+												});
+											});
+										});
+									}, 2900);
 								});
 							});
 						});
@@ -53,6 +77,18 @@ function lightDisplay() {
 	document.getElementById("lightContainer").innerHTML += `
     <div class="lightImg">
         <img src="../../../public/assets/img/thelight.gif" />
+    </div>
+    `;
+}
+function clearForSainRembrion() {
+	document.getElementById("lightContainer").style.display = "none";
+	document.getElementById("entitiesContainer").style.display = "none";
+	document.getElementById("portalsContainer").style.display = "none";
+}
+function sainRembrionAppear() {
+	document.getElementById("sainRembrionContainer").innerHTML += `
+    <div class="sainRembrion.img">
+        <img src="../../../public/assets/img/sainrembrion.gif" />
     </div>
     `;
 }

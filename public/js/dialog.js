@@ -173,8 +173,16 @@ function characterFalling(imgId) {
 }
 
 // White screen
-
-function whiteScreen() {}
+function whiteScreen() {
+	document.body.innerHTML += `<div id ="whiteScreen"></div>`;
+	let whiteScreen = document.getElementById("whiteScreen");
+	setTimeout(() => {
+		whiteScreen.style.opacity = 1;
+	}, this.animationDelay + 20);
+	setTimeout(() => {
+		whiteScreen.style.display = "none";
+	}, 3000);
+}
 
 /*** AUDIO MANIPULATION ***/
 
