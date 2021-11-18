@@ -1,5 +1,6 @@
 refreshUserLife(0);
 thisIsMySword("divinilame.gif");
+playChapterMusic(`stage1-7.mp3`);
 
 whoIsTalking("???");
 letterByLetter("Bienvenue sur mes terres mes amis.");
@@ -12,7 +13,7 @@ document.getElementById(">").addEventListener("click", () => {
 		dialogActualisation("Violight", `Chevrette, ${userName}, je suis Violight.`, ">");
 		displayTheThird("dogs.gif");
 		displayInterlocutor("violight.gif");
-		document.getElementById("dogs").style.transform = "translateY(80px)";
+		document.getElementById("dogs").style.transform = "translateY(70px)";
 		document.getElementById(">").addEventListener("click", () => {
 			dialogActualisation("Violight", `Grande prêtresse de la lumière.`, ">");
 			document.getElementById(">").addEventListener("click", () => {

@@ -1,4 +1,5 @@
 storyTextDisplay("Cela faisait longtemps que les trois réceptacles avaient été infectés.");
+playChapterMusic(`stage-story.mp3`);
 
 document.getElementById(">").addEventListener("click", () => {
 	storyTextDisplay("Le premier par la rancœur.");

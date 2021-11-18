@@ -1,4 +1,5 @@
 refreshUserLife(0);
+playChapterMusic(`stage1-5.mp3`);
 
 whoIsTalking("Chevrette");
 letterByLetter("Pas facile le réveil aujourd'hui.");
@@ -151,7 +152,7 @@ document.getElementById(">").addEventListener("click", () => {
 																																																document.getElementById(">").addEventListener("click", () => {
 																																																	dialogActualisation("XinJinPin FinLin", "Je n'ai aucune garantie sur votre réussite.", ">");
 																																																	document.getElementById(">").addEventListener("click", () => {
-																																																		dialogActualisation("Chevrette", `Oui.. ${userName}, retournons voir le Forgereur`, ">");
+																																																		dialogActualisation("Chevrette", `Oui.. ${userName}, retournons voir le Forgereur.`, ">");
 																																																		document.getElementById(">").addEventListener("click", () => {
 																																																			location.href = "../chapter_6/index1-6.html";
 																																																		});

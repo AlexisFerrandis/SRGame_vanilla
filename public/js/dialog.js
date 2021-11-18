@@ -28,6 +28,7 @@ function letterByLetter(message) {
 	let interval = setInterval(function () {
 		document.getElementById("characterDialog").innerHTML += message.charAt(i);
 		i++;
+		playSoundEffect("letter-typing.wav");
 		if (i > message.length) {
 			clearInterval(interval);
 		}
@@ -113,6 +114,16 @@ function displayTheThird(imgName) {
 	theThird.style.opacity = "1";
 }
 
+// Show Doggo
+function displayThePet() {
+	let petWalking = localStorage.getItem("chosenDog");
+	document.getElementById("petWalkContainer").innerHTML = `
+	<div class="walking-pet" id="petWalking">
+		<img src="../../../public/assets/img/${petWalking.toLocaleLowerCase()}.gif" />
+	</div>
+	`;
+}
+
 // Color name fct of the character
 function characterNameColor(name) {
 	switch (name) {
@@ -142,6 +153,9 @@ function characterNameColor(name) {
 			break;
 		case "Violight":
 			return "darkslateblue";
+			break;
+		case "Souillimoff":
+			return "darkolivegreen";
 			break;
 
 		default:
@@ -182,6 +196,28 @@ function whiteScreen() {
 	setTimeout(() => {
 		whiteScreen.style.display = "none";
 	}, 3000);
+}
+
+// Three items option display
+function threeItemChoice(imgNameOne, itemNameOne, imageNameTwo, itemNameTwo, imgNameThree, itemNameThree) {
+	document.body.innerHTML += `
+	<div id="threeItemContainer" class="nes-container is-rounded is-dark">
+		<div class="itemChoice" id="${itemNameOne}">
+			<img src="../../../public/assets/img/${imgNameOne}" />
+			<h3>${itemNameOne}</h3>
+		</div>
+
+		<div class="itemChoice" id="${itemNameTwo}">
+			<img src="../../../public/assets/img/${imageNameTwo}" />
+			<h3>${itemNameTwo}</h3>
+		</div>
+
+		<div class="itemChoice" id="${itemNameThree}">
+			<img src="../../../public/assets/img/${imgNameThree}" />
+			<h3>${itemNameThree}</h3>
+		</div>
+	</div>
+	`;
 }
 
 /*** AUDIO MANIPULATION ***/

@@ -43,10 +43,6 @@ window.onload = document.body.innerHTML +=
                     <span> Bruitage</span>
                 </label>
             </div>
-            
-            <div id="userRename">
-                Renommer votre personnage 
-            </div>
 
         </div>
     </div>
@@ -69,6 +65,8 @@ window.onload = document.body.innerHTML +=
             <a href="./game/Part_1/chapter_7/index1-7.html">7. Noblesse authentique</br>
             <a href="./game/Part_1/chapter_7-story/index1-7-story.html">0. Raconte moi une histoire</br>
             <a href="./game/Part_1/chapter_8/index1-8.html">8. Smol doggo</br>
+            <a href="./game/Part_1/chapter_9/index1-9.html">9. I play Pokemon Go</br>
+            <a href="./game/Part_1/chapter_10/index1-10.html">10. Souilley</br>
         </div>
     </div>
 </div>

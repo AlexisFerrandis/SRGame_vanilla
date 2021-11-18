@@ -1,4 +1,5 @@
 refreshUserLife(0);
+playChapterMusic(`stage1-3.mp3`);
 
 whoIsTalking("???");
 letterByLetter("MMeeeeeeeeeuuuuuuuuuh !!");
@@ -10,7 +11,7 @@ document.getElementById(">").addEventListener("click", () => {
 	document.getElementById(">").addEventListener("click", () => {
 		dialogActualisation("???", `GrouNMF !`, ">");
 		document.getElementById(">").addEventListener("click", () => {
-			dialogActualisation("Chevrette", `Attention ${userName}`, ">");
+			dialogActualisation("Chevrette", `Attention ${userName} !`, ">");
 			document.getElementById(">").addEventListener("click", () => {
 				dialogActualisation("???", `DReEEEeeE !`, ">");
 				refreshUserLife(-1);

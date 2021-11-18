@@ -1,0 +1,17 @@
+#threeItemContainer {
+	@extend .absolute-center;
+	width: 92%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	.itemChoice img {
+		height: 8em;
+		width: 9em;
+		object-fit: cover;
+		transition: $short-anim;
+		&:hover {
+			transform: scale(1.4);
+		}
+	}
+}

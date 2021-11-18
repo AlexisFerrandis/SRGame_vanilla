@@ -1,4 +1,5 @@
 refreshUserLife(5);
+playChapterMusic(`stage1-2.mp3`);
 
 whoIsTalking("???");
 letterByLetter("Qui va là ?!");

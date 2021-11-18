@@ -1,4 +1,5 @@
 refreshUserLife(0);
+playChapterMusic(`stage1-4.mp3`);
 
 whoIsTalking("Chevrette");
 letterByLetter("Jo !");
