@@ -35,7 +35,7 @@ window.onload = document.body.innerHTML +=
             <div class="checkbox-container">
                 <label>
                     <input type="checkbox" class="nes-checkbox is-dark" checked />
-                    <span> Checkbox</span>
+                    <span> Mode difficile</span>
                 </label>
                 <label>
                     <input type="checkbox" class="nes-checkbox is-dark" checked />
@@ -69,6 +69,8 @@ window.onload = document.body.innerHTML +=
             <a href="#">4. Le retour du Roi<a></br>
             <a href="#">5. Le riz est cuit<a></br>
             <a href="#">6. Divinilame<a></br>
+            <a href="#">7. Noblesse authentique</br>
+            <a href="#">0. Raconte moi une histoire</br>
         </div>
     </div>
 </div>

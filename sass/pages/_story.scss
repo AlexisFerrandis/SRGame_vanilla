@@ -1,0 +1,45 @@
+#portalsContainer {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 22em;
+	width: 100%;
+	height: 10em;
+	.entitiPortal img {
+		width: 200px;
+		object-fit: cover;
+	}
+}
+#entitiesContainer {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 28em;
+	width: 100%;
+	height: 10em;
+	.entitiesImg img {
+		height: 220px;
+	}
+}
+#lightContainer {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 22em;
+	width: 100%;
+	height: 10em;
+	.lightImg {
+		transform: rotate(-90deg);
+	}
+}
+
+#storyOption {
+	position: absolute;
+	bottom: 6em;
+	left: 50%;
+	transform: translateX(-50%);
+	.options {
+		color: white;
+		width: 100px;
+	}
+}

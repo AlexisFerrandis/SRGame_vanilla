@@ -18,10 +18,7 @@
 		}
 	}
 	#closeOptBtn {
-		position: absolute;
-		top: 1em;
-		right: 1em;
-		font-size: 1.2em;
+		@extend .quit-menu;
 	}
 	#userRename {
 		margin-top: 2em;

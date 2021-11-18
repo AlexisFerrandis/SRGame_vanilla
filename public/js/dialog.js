@@ -57,6 +57,16 @@ function get4LetttersForId(string) {
 	return fourthLetters;
 }
 
+// Story stage render
+function storyTextDisplay(message) {
+	document.getElementById("characterDialog").innerHTML = "";
+	document.getElementById("characterDialog").style.textAlign = "center";
+	letterByLetter(message);
+
+	let storyOption = document.getElementById("storyOption");
+	storyOption.innerHTML = `<div id=">" class="nes-btn options">></div>`;
+}
+
 /*** CHARACTER DISPLAY AND INTERACTION ***/
 
 // Display the goat
@@ -105,6 +115,9 @@ function characterNameColor(name) {
 			return "gold";
 			break;
 		case "Lettre de V":
+			return "darkslateblue";
+			break;
+		case "Violight":
 			return "darkslateblue";
 			break;
 

@@ -4,12 +4,14 @@ const userDecision = localStorage.getItem("userDecision");
 
 const isEdelistAlive = localStorage.getItem("isEdelistAlive");
 
+// Calculate user's karma
 function refreshUserDecision(val) {
 	let userDecision = localStorage.getItem("userDecision");
 	let decisionUpdate = parseInt(userDecision) + val;
 	localStorage.setItem("userDecision", decisionUpdate);
 }
 
+// Set user's life dynamically
 function refreshUserLife(val) {
 	const lifeContainer = document.getElementById("lifeContainer");
 	let userLife = localStorage.getItem("userLife");
@@ -70,7 +72,7 @@ function refreshUserLife(val) {
 	}
 }
 
-// If user is die, button to retry or go home...
+// If user die, button to retry or go home...
 function gameOver() {
 	document.body.innerHTML += `
 	<div id=gameOver>
@@ -90,9 +92,41 @@ function gameOver() {
 	});
 }
 
+// Display a new Item
+function newItemDisplay(imgName) {
+	document.body.innerHTML += `
+    <div id="newItemDisplay">
+        <img src="../../../public/assets/img/${imgName}"
+    </div>
+    `;
+}
+
 // Put a sword in inventory
 function thisIsMySword(swordImgName) {
 	document.getElementById("inventaireContainer").innerHTML = `
 	<img id="actualSword" src="../../../public/assets/img/${swordImgName}"/>
 	`;
 }
+
+/***  RETURN TO MENU ***/
+
+(function displayPause() {
+	document.body.innerHTML += `
+	<button type="button" class="nes-btn" id="pauseBtn">||</button>
+	<div class="nes-container is-rounded is-dark" id="pauseMenu">
+		<div id="closePauseMenuBtn">X</div>
+		<h3>Pause</h3>
+		<button type="button" class="nes-btn" id="saveAndQuitBtn">Sauvegarder et quitter la partie</button>
+	</div>
+	`;
+})();
+
+document.getElementById("pauseBtn").addEventListener("click", () => {
+	document.getElementById("pauseMenu").style.display = "block";
+});
+document.getElementById("closePauseMenuBtn").addEventListener("click", () => {
+	document.getElementById("pauseMenu").style.display = "none";
+});
+document.getElementById("saveAndQuitBtn").addEventListener("click", () => {
+	location.href = "../../../index.html";
+});

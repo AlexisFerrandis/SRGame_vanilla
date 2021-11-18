@@ -4,9 +4,10 @@
 @import "./utils/extensions";
 
 @import "./components/buttons";
+@import "./components/pause-btn";
 @import "./components/input";
 @import "./components/choice-impact-disclaimer";
-@import "./components/first-divinilame-display";
+@import "./components/new-item-display";
 
 @import "./layouts/parameters";
 @import "./layouts/chapter-selection";
@@ -17,6 +18,7 @@
 
 @import "./pages/home";
 @import "./pages/classic-stage";
+@import "./pages/story";
 
 * {
 	margin: 0;

@@ -9,10 +9,7 @@
 		margin-bottom: 2em;
 	}
 	#closeChapterBtn {
-		position: absolute;
-		top: 1em;
-		right: 1em;
-		font-size: 1.2em;
+		@extend .quit-menu;
 	}
 	.chapitreDisplay {
 		a {

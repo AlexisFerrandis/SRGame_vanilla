@@ -20,10 +20,10 @@ document.getElementById(">").addEventListener("click", () => {
 						dialogActualisation("", `...`, ">");
 						document.getElementById(">").addEventListener("click", () => {
 							dialogActualisation("Jo", `Et voilà, votre lame !`, ">");
-							swordWOW();
+							newItemDisplay("divinilame.gif");
 							document.getElementById(">").addEventListener("click", () => {
 								dialogActualisation("Chevrette", `Merci beaucoup Jo !`, "Merci.");
-								document.getElementById("theSwordApparition").remove();
+								document.getElementById("newItemDisplay").remove();
 								thisIsMySword("divinilame.gif");
 								document.getElementById(">").addEventListener("click", () => {
 									dialogActualisation("Jo", `J'ai pris l'initiative de lui donner un petit nom.`, ">");
@@ -44,15 +44,15 @@ document.getElementById(">").addEventListener("click", () => {
 																document.getElementById(">").addEventListener("click", () => {
 																	dialogActualisation("Chevrette", `Etonnant, je n'attendais pas de courrier.`, ">");
 																	document.getElementById(">").addEventListener("click", () => {
-																		dialogActualisation("Lettre de V", `Bonjour,`, ">");
+																		dialogActualisation("Lettre de V", `"Bonjour,"`, ">");
 																		document.getElementById(">").addEventListener("click", () => {
-																			dialogActualisation("Lettre de V", `J’ai des informations qui pourraient vous intéresser.`, ">");
+																			dialogActualisation("Lettre de V", `"J’ai des informations qui pourraient vous intéresser."`, ">");
 																			document.getElementById(">").addEventListener("click", () => {
-																				dialogActualisation("Lettre de V", `Si vous souhaitez en savoir plus,`, ">");
+																				dialogActualisation("Lettre de V", `"Si vous souhaitez en savoir plus,"`, ">");
 																				document.getElementById(">").addEventListener("click", () => {
-																					dialogActualisation("Lettre de V", `Retrouvez-moi à Lewisanom.`, ">");
+																					dialogActualisation("Lettre de V", `"Retrouvez-moi à Lewisanom."`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
-																						dialogActualisation("Lettre de V", `V`, ">");
+																						dialogActualisation("Lettre de V", `"V"`, ">");
 																						document.getElementById(">").addEventListener("click", () => {
 																							dialogActualisation("Chevrette", `C’est la seule piste que nous ayons pour le moment.`, ">");
 																							document.getElementById(">").addEventListener("click", () => {
@@ -90,11 +90,3 @@ document.getElementById(">").addEventListener("click", () => {
 		});
 	});
 });
-
-function swordWOW() {
-	document.body.innerHTML += `
-    <div id="theSwordApparition">
-        <img src="../../../public/assets/img/divinilame.gif"
-    </div>
-    `;
-}
