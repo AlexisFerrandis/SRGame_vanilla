@@ -39,12 +39,8 @@ window.onload = document.body.innerHTML +=
                     <span> Mode difficile</span>
                 </label>
                 <label>
-                    <input type="checkbox" class="nes-checkbox is-dark" checked />
-                    <span> Checkbox</span>
-                </label>
-                <label>
-                    <input type="checkbox" class="nes-checkbox is-dark" checked />
-                    <span> Checkbox</span>
+                    <input id="activateSoundEffect" type="checkbox" class="nes-checkbox is-dark" checked />
+                    <span> Bruitage</span>
                 </label>
             </div>
             
@@ -64,14 +60,14 @@ window.onload = document.body.innerHTML +=
         <div id="closeChapterBtn">X</div>
         <div class="chapitreDisplay">
             <h4>Part I</h4>
-            <a href="#">1. Hey you<a></br>
-            <a href="#">2. Le génie incompris<a></br>
-            <a href="#">3. Appel de la nature<a></br>
-            <a href="#">4. Le retour du Roi<a></br>
-            <a href="#">5. Le riz est cuit<a></br>
-            <a href="#">6. Divinilame<a></br>
-            <a href="#">7. Noblesse authentique</br>
-            <a href="#">0. Raconte moi une histoire</br>
+            <a href="./game/Part_1/chapter_1/index1-1.html">1. Hey you<a></br>
+            <a href="./game/Part_1/chapter_2/index1-2.html">2. Le génie incompris<a></br>
+            <a href="./game/Part_1/chapter_3/index1-3.html">3. Appel de la nature<a></br>
+            <a href="./game/Part_1/chapter_4/index1-4.html">4. Le retour du Roi<a></br>
+            <a href="./game/Part_1/chapter_5/index1-5.html">5. Le riz est cuit<a></br>
+            <a href="./game/Part_1/chapter_6/index1-6.html">6. Divinilame<a></br>
+            <a href="./game/Part_1/chapter_7/index1-7.html">7. Noblesse authentique</br>
+            <a href="./game/Part_1/chapter_7-story/index1-7-story.html">0. Raconte moi une histoire</br>
         </div>
     </div>
 </div>
@@ -97,6 +93,12 @@ document.getElementById("volumeCtrl").addEventListener("input", () => {
 document.getElementById("textSpeedCtrl").addEventListener("input", () => {
 	let textSpeedChosen = document.getElementById("textSpeedCtrl").value;
 	localStorage.setItem("textSpeedChosen", textSpeedChosen);
+});
+
+// Activate sound effect
+document.getElementById("activateSoundEffect").addEventListener("input", () => {
+	let isSoundEffectActif = document.getElementById("activateSoundEffect").checked;
+	localStorage.setItem("isSoundEffectActif", isSoundEffectActif);
 });
 
 /*** CHAPTERS SELECTION ***/

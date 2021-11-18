@@ -116,7 +116,7 @@ function thisIsMySword(swordImgName) {
 	<div class="nes-container is-rounded is-dark" id="pauseMenu">
 		<div id="closePauseMenuBtn">X</div>
 		<h3>Pause</h3>
-		<button type="button" class="nes-btn" id="saveAndQuitBtn">Sauvegarder et quitter la partie</button>
+		<button type="button" class="nes-btn" id="saveAndQuitBtn">Sauvegarder et revenir au menu principal</button>
 	</div>
 	`;
 })();

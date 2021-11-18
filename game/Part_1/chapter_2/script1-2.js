@@ -1,4 +1,3 @@
-localStorage.setItem("userLife", 0);
 refreshUserLife(5);
 
 whoIsTalking("???");

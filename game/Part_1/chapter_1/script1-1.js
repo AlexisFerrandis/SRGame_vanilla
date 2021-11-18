@@ -1,4 +1,5 @@
-playChapterMusic(`principal_menu_theme.mp3`);
+playChapterMusic(`stage1-1.mp3`);
+setDefaultOptions();
 
 setTimeout(function () {
 	whoIsTalking("???");

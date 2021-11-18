@@ -54,12 +54,5 @@ function lightDisplay() {
     <div class="lightImg">
         <img src="../../../public/assets/img/thelight.gif" />
     </div>
-    <div class="lightImg">
-        <img src="../../../public/assets/img/thelight.gif" />
-    </div>
-    <div class="lightImg">
-        <img src="../../../public/assets/img/thelight.gif" />
-    </div>
     `;
 }
-function whiteScreen() {}

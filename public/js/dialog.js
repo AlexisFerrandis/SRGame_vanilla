@@ -2,6 +2,7 @@
 
 // Display the name and speech of the talking character, and users options
 function dialogActualisation(name, message, a, b, c, d) {
+	playSoundEffect("click.wav");
 	let cacarcterName = document.getElementById("characterName");
 	let characterSpeech = document.getElementById("characterDialog");
 	let BtnContainer = document.getElementById("userOptions");
@@ -171,10 +172,15 @@ function characterFalling(imgId) {
 	document.getElementById(imgId).style.transform = "translateY(150px)";
 }
 
-/*** AUDIO MANIPULATION ***/
-function playChapterMusic(songName) {
-	musicLevel = new Audio(`../../../public/assets/song/${songName}`);
+// White screen
 
+function whiteScreen() {}
+
+/*** AUDIO MANIPULATION ***/
+
+// Music level
+function playChapterMusic(musicName) {
+	musicLevel = new Audio(`../../../public/assets/audio/music/${musicName}`);
 	let gameVolume = localStorage.getItem("volumeChosen");
 	switch (gameVolume) {
 		case "0":
@@ -198,4 +204,43 @@ function playChapterMusic(songName) {
 	}
 	musicLevel.play();
 	musicLevel.loop = true;
+}
+
+// Music level
+function playSoundEffect(soundName) {
+	theSound = new Audio(`../../../public/assets/audio/sound/${soundName}`);
+	let gameVolume = localStorage.getItem("volumeChosen");
+	let isSoundEffectActif = localStorage.getItem("isSoundEffectActif");
+
+	if (isSoundEffectActif == "true") {
+		switch (gameVolume) {
+			case "0":
+				theSound.volume = 0;
+				break;
+			case "1":
+				theSound.volume = 0.05;
+				break;
+			case "2":
+				theSound.volume = 0.12;
+				break;
+			case "3":
+				theSound.volume = 0.2;
+				break;
+			case "4":
+				theSound.volume = 0.23;
+				break;
+			default:
+				theSound.volume = 0.12;
+				break;
+		}
+		theSound.play();
+	}
+}
+
+/*** SET DEFAULT OPTIONS ***/
+function setDefaultOptions() {
+	localStorage.setItem("volumeChosen", 1);
+	localStorage.setItem("textSpeedChosen", 2);
+	localStorage.setItem("isSoundEffectActif", true);
+	localStorage.setItem("userLife", 0);
 }
