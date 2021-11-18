@@ -83,6 +83,7 @@ function gameOver() {
 	<div>
 	`;
 	document.getElementById("dieAndRetry").addEventListener("click", () => {
+		refreshUserLife(-5);
 		refreshUserLife(3);
 		window.location.reload();
 	});

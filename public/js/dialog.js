@@ -124,6 +124,15 @@ function displayThePet() {
 	`;
 }
 
+// Show sword slash
+function swordSlash() {
+	document.getElementById("characterTwo").innerHTML += `
+	<div id="swordSlash">
+		<img src="../../../public/assets/img/slash.gif" />
+	</div>
+	`;
+}
+
 // Color name fct of the character
 function characterNameColor(name) {
 	switch (name) {
@@ -156,6 +165,12 @@ function characterNameColor(name) {
 			break;
 		case "Souillimoff":
 			return "darkolivegreen";
+			break;
+		case "#ù$*~¤^":
+			return "greenyellow";
+			break;
+		case "Defrancorrible":
+			return "darkblue";
 			break;
 
 		default:
