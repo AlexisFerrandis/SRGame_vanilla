@@ -19,7 +19,7 @@ h1 {
 .home-main {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 8em;
+	margin: 8em auto 0;
 	button {
 		@include tablet-breakpoint {
 			font-size: 0.9em;

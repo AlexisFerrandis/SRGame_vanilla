@@ -55,20 +55,28 @@ window.onload = document.body.innerHTML +=
         <h3>Chapitres</h3>
         <div id="closeChapterBtn">X</div>
         <div class="chapitreDisplay">
-            <h4>Part I</h4>
-            <a href="./game/Part_1/chapter_1/index1-1.html">1. Hey you<a></br>
-            <a href="./game/Part_1/chapter_2/index1-2.html">2. Le génie incompris<a></br>
-            <a href="./game/Part_1/chapter_3/index1-3.html">3. Appel de la nature<a></br>
-            <a href="./game/Part_1/chapter_4/index1-4.html">4. Le retour du Roi<a></br>
-            <a href="./game/Part_1/chapter_5/index1-5.html">5. Le riz est cuit<a></br>
-            <a href="./game/Part_1/chapter_6/index1-6.html">6. Divinilame<a></br>
-            <a href="./game/Part_1/chapter_7/index1-7.html">7. Noblesse authentique</br>
-            <a href="./game/Part_1/chapter_7-story/index1-7-story.html">0. Raconte moi une histoire</br>
-            <a href="./game/Part_1/chapter_8/index1-8.html">8. Smol doggo</br>
-            <a href="./game/Part_1/chapter_9/index1-9.html">9. I play Pokemon Go</br>
-            <a href="./game/Part_1/chapter_10/index1-10.html">10. Souilley</br>
-            <a href="./game/Part_1/chapter_11/index1-11.html">11. La plouille</br>
-            <a href="./game/Part_1/chapter_12/index1-12.html">12. Rédemption du savoir</br>
+            <div id="chapterSelectionPartOne">
+                <h4>Part I</h4>
+                <a href="./game/Part_1/chapter_1/index1-1.html">1. Hey you<a></br>
+                <a href="./game/Part_1/chapter_2/index1-2.html">2. Le génie incompris<a></br>
+                <a href="./game/Part_1/chapter_3/index1-3.html">3. Appel de la nature<a></br>
+                <a href="./game/Part_1/chapter_4/index1-4.html">4. Le retour du Roi<a></br>
+                <a href="./game/Part_1/chapter_5/index1-5.html">5. Le riz est cuit<a></br>
+                <a href="./game/Part_1/chapter_6/index1-6.html">6. Divinilame<a></br>
+                <a href="./game/Part_1/chapter_7/index1-7.html">7. Noblesse authentique</br>
+                <a href="./game/Part_1/chapter_7-story/index1-7-story.html">0. Raconte moi une histoire</br>
+                <a href="./game/Part_1/chapter_8/index1-8.html">8. Smol doggo</br>
+                <a href="./game/Part_1/chapter_9/index1-9.html">9. I play Pokemon Go</br>
+                <a href="./game/Part_1/chapter_10/index1-10.html">10. Souilley</br>
+                <a href="./game/Part_1/chapter_11/index1-11.html">11. La plouille</br>
+                <a href="./game/Part_1/chapter_12/index1-12.html">12. Rédemption du savoir</br>
+            </div>
+            
+            <div id="chapterSelectionPartTwo">
+                <h4>Part II</h4>
+                <a href="./game/Part_2/chapter_1/index2-1.html">1. Monsieur Seguin<a></br>
+                <a href="./game/Part_2/chapter_2/index2-2.html">2. La carte Kiwi<a></br>
+            </div>
         </div>
     </div>
 </div>

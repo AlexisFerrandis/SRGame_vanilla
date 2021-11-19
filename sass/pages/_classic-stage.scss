@@ -31,10 +31,15 @@
 		.options {
 			color: white;
 			width: 80%;
+			max-width: 500px;
 			margin-bottom: 1em;
 		}
 	}
 }
 .background1-1 {
 	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 3, 52, 1) 14%, rgba(0, 0, 0, 1) 100%);
+}
+
+main {
+	max-width: 999px;
 }

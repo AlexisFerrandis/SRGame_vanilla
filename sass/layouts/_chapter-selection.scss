@@ -7,7 +7,9 @@
 	overflow: scroll;
 	h3 {
 		text-align: center;
-		margin-bottom: 2em;
+	}
+	h4 {
+		margin-top: 3em;
 	}
 	#closeChapterBtn {
 		@extend .quit-menu;
@@ -15,9 +17,18 @@
 	.chapitreDisplay {
 		a {
 			margin-left: 2em;
-			color: aqua;
 			@include tablet-breakpoint {
 				font-size: 0.8em;
+			}
+		}
+		#chapterSelectionPartOne {
+			a {
+				color: aqua;
+			}
+		}
+		#chapterSelectionPartTwo {
+			a {
+				color: burlywood;
 			}
 		}
 	}

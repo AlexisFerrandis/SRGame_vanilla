@@ -42,3 +42,20 @@ body {
 	margin: 0 auto;
 	overflow: hidden;
 }
+
+::-webkit-scrollbar {
+	width: 13px;
+	height: 13px;
+}
+::-webkit-scrollbar-thumb {
+	background: red;
+	border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(255, 143, 143);
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 0px;
+	box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}

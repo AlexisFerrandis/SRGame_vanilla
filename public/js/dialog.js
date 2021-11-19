@@ -177,6 +177,9 @@ function characterNameColor(name) {
 		case "Defranco":
 			return "deeppink";
 			break;
+		case "Chèvre noir":
+			return "black";
+			break;
 
 		default:
 			return "white";
