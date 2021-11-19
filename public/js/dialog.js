@@ -169,9 +169,12 @@ function characterNameColor(name) {
 			return "darkolivegreen";
 			break;
 		case "#ù$*~¤^":
-			return "greenyellow";
+			return "deeppink";
 			break;
 		case "Defrancorrible":
+			return "deeppink";
+			break;
+		case "Defranco":
 			return "deeppink";
 			break;
 
@@ -213,6 +216,19 @@ function whiteScreen() {
 	setTimeout(() => {
 		whiteScreen.style.display = "none";
 	}, 3000);
+}
+
+// Black screen
+function blackScreenToMenu() {
+	document.body.innerHTML += `<div id ="blackScreen"></div>`;
+	let blackScreen = document.getElementById("blackScreen");
+	setTimeout(() => {
+		blackScreen.style.opacity = 1;
+	}, this.animationDelay + 20);
+	setTimeout(() => {
+		blackScreen.style.display = "none";
+		location.href = "../../../index.html";
+	}, 4200);
 }
 
 // Three items option display
@@ -303,5 +319,5 @@ function setDefaultOptions() {
 	localStorage.setItem("volumeChosen", 1);
 	localStorage.setItem("textSpeedChosen", 2);
 	localStorage.setItem("isSoundEffectActif", true);
-	localStorage.setItem("userLife", 0);
+	localStorage.setItem("userLife", 1);
 }
