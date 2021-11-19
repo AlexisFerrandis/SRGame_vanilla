@@ -219,7 +219,7 @@ function whiteScreen() {
 }
 
 // Black screen
-function blackScreenToMenu() {
+function blackScreenToLocation(path) {
 	document.body.innerHTML += `<div id ="blackScreen"></div>`;
 	let blackScreen = document.getElementById("blackScreen");
 	setTimeout(() => {
@@ -227,7 +227,7 @@ function blackScreenToMenu() {
 	}, this.animationDelay + 20);
 	setTimeout(() => {
 		blackScreen.style.display = "none";
-		location.href = "../../../index.html";
+		location.href = path;
 	}, 4200);
 }
 

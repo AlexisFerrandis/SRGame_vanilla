@@ -21,6 +21,7 @@ document.getElementById(">").addEventListener("click", () => {
 						dialogActualisation("", `...`, ">");
 						document.getElementById(">").addEventListener("click", () => {
 							dialogActualisation("Jo", `Et voilà, votre lame !`, ">");
+							playSoundEffect("new-item.mp3");
 							newItemDisplay("divinilame.gif");
 							document.getElementById(">").addEventListener("click", () => {
 								dialogActualisation("Chevrette", `Merci beaucoup Jo !`, "Merci.");

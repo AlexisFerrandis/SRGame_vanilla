@@ -82,6 +82,8 @@ function gameOver() {
 		<button id="toHome" type="button" class="nes-btn ">Retour au menu</button>
 	<div>
 	`;
+
+	playSoundEffect("game-over.wav");
 	document.getElementById("dieAndRetry").addEventListener("click", () => {
 		refreshUserLife(-5);
 		refreshUserLife(3);
@@ -129,5 +131,6 @@ document.getElementById("closePauseMenuBtn").addEventListener("click", () => {
 	document.getElementById("pauseMenu").style.display = "none";
 });
 document.getElementById("saveAndQuitBtn").addEventListener("click", () => {
+	localStorage.setItem("userSave", window.location.href);
 	location.href = "../../../index.html";
 });

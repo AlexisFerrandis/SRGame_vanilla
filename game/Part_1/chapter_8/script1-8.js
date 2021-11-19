@@ -39,6 +39,7 @@ document.getElementById(">").addEventListener("click", () => {
 													choiceOptions[i].addEventListener("click", () => {
 														let chosenDog = choiceOptions[i].id;
 														localStorage.setItem("chosenDog", chosenDog);
+														playSoundEffect("new-item.mp3");
 														displayThePet();
 														document.getElementById("threeItemContainer").style.display = "none";
 														dialogActualisation("Chevrette", `Merci énormément, qu'il est beau!`, "Merci <3");

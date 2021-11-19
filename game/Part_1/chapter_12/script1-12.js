@@ -33,7 +33,7 @@ document.getElementById(">").addEventListener("click", () => {
 										document.getElementById(">").addEventListener("click", () => {
 											dialogActualisation("Chevrette", `Chèvre Noir ? `, ">");
 											document.getElementById(">").addEventListener("click", () => {
-												blackScreenToMenu();
+												blackScreenToLocation("../../../index.html");
 											});
 										});
 									});

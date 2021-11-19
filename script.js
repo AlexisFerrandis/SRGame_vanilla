@@ -40,7 +40,7 @@ window.onload = document.body.innerHTML +=
                 </label>
                 <label>
                     <input id="activateSoundEffect" type="checkbox" class="nes-checkbox is-dark" checked />
-                    <span> Bruitage</span>
+                    <span> Bruitages</span>
                 </label>
             </div>
 
@@ -74,13 +74,42 @@ window.onload = document.body.innerHTML +=
 </div>
 `;
 
+// Part path
+document.getElementById("partOne").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
+	blackScreenToLocation("./game/Part_1/chapter_1/index1-1.html");
+});
+document.getElementById("partTwo").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
+	blackScreenToLocation("./game/Part_2/chapter_1/index2-1.html");
+});
+document.getElementById("partThree").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
+	blackScreenToLocation("./game/Part_3/chapter_1/index3-1.html");
+});
+
+// Display continue Btn if they're is a save
+if (localStorage.getItem("userSave")) {
+	document.getElementById("saveBtnContainer").innerHTML += `
+    <button id="userSaveBtn" class="nes-btn options home-btn">
+		<h3>Continuer</h3>
+	</button>
+    `;
+	document.getElementById("userSaveBtn").addEventListener("click", () => {
+		playSoundEffect("menu-click.wav");
+		blackScreenToLocation(localStorage.getItem("userSave"));
+	});
+}
+
 /*** OPTIONS SELECTION ***/
 
 // Open and close options
 document.getElementById("homeOptionsBtn").addEventListener("click", () => {
+	playSoundEffect("menu-chapter.wav");
 	document.getElementById("parameterContainer").style.display = "block";
 });
 document.getElementById("closeOptBtn").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
 	document.getElementById("parameterContainer").style.display = "none";
 });
 
@@ -105,8 +134,10 @@ document.getElementById("activateSoundEffect").addEventListener("input", () => {
 /*** CHAPTERS SELECTION ***/
 
 document.getElementById("chapterChoiceBtn").addEventListener("click", () => {
+	playSoundEffect("menu-chapter.wav");
 	document.getElementById("chaptersContainer").style.display = "block";
 });
 document.getElementById("closeChapterBtn").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
 	document.getElementById("chaptersContainer").style.display = "none";
 });
