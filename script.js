@@ -67,6 +67,8 @@ window.onload = document.body.innerHTML +=
             <a href="./game/Part_1/chapter_8/index1-8.html">8. Smol doggo</br>
             <a href="./game/Part_1/chapter_9/index1-9.html">9. I play Pokemon Go</br>
             <a href="./game/Part_1/chapter_10/index1-10.html">10. Souilley</br>
+            <a href="./game/Part_1/chapter_11/index1-11.html">11. La plouille</br>
+            <a href="./game/Part_1/chapter_12/index1-12.html">12. Rédemption du savoir</br>
         </div>
     </div>
 </div>

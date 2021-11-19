@@ -87,6 +87,7 @@ document.getElementById(">").addEventListener("click", () => {
 
 															document.getElementById("cont").addEventListener("click", () => {
 																gameOver();
+																refreshUserDecision(-3);
 															});
 														});
 													});

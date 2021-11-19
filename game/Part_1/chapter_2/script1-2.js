@@ -47,7 +47,7 @@ document.getElementById(">").addEventListener("click", () => {
 																		document.getElementById(">").addEventListener("click", () => {
 																			dialogActualisation("Mr Edeliste", `Je ne suis pas sur, mais c’est à partir de ce moment là que tous ces événements sont apparus.`, ">");
 																			document.getElementById(">").addEventListener("click", () => {
-																				dialogActualisation("Chevrette", `Qu'en penses tu ${userName}`, "Je pense qu’il est fou!", "Il est spécial, mais peut être a-t-il raison?");
+																				dialogActualisation("Chevrette", `Qu'en penses tu ${userName} ?`, "Je pense qu’il est fou!", "Il est spécial, mais peut être a-t-il raison?");
 																				refreshImpactChoice();
 
 																				document.getElementById(">").addEventListener("click", () => {
@@ -57,7 +57,7 @@ document.getElementById(">").addEventListener("click", () => {
 																					dialogActualisation("Mr Edeliste", `Vous voulez me mettre dans la poubelle c’est ca ?!`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
 																						characterFalling("edel");
-																						dialogActualisation("", `Il sauta dans la poubelle, puis disparu, comme aspiré par elle`, ">");
+																						dialogActualisation("", `Il sauta dans la poubelle, puis disparu, comme aspiré par elle.`, ">");
 																						document.getElementById(">").addEventListener("click", () => {
 																							dialogActualisation("Chevrette", `Une rencontre étonnante.`, ">");
 																							document.getElementById(">").addEventListener("click", () => {

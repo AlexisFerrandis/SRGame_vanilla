@@ -88,7 +88,9 @@ function storyTextDisplay(message) {
 	letterByLetter(message);
 
 	let storyOption = document.getElementById("storyOption");
-	storyOption.innerHTML = `<div id=">" class="nes-btn options">></div>`;
+	if (storyOption) {
+		storyOption.innerHTML = `<div id=">" class="nes-btn options">></div>`;
+	}
 }
 
 /*** CHARACTER DISPLAY AND INTERACTION ***/
@@ -170,7 +172,7 @@ function characterNameColor(name) {
 			return "greenyellow";
 			break;
 		case "Defrancorrible":
-			return "darkblue";
+			return "deeppink";
 			break;
 
 		default:
