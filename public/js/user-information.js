@@ -125,9 +125,11 @@ function thisIsMySword(swordImgName) {
 })();
 
 document.getElementById("pauseBtn").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
 	document.getElementById("pauseMenu").style.display = "block";
 });
 document.getElementById("closePauseMenuBtn").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
 	document.getElementById("pauseMenu").style.display = "none";
 });
 document.getElementById("saveAndQuitBtn").addEventListener("click", () => {

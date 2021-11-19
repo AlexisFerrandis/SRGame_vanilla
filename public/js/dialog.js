@@ -189,6 +189,7 @@ function refreshImpactChoice() {
 	let impactChoice = document.getElementById("choiceImpact");
 	impactChoice.style.transition = "200ms";
 	if (impactChoice.classList.contains("inactif")) {
+		playSoundEffect("impact-choice.wav");
 		impactChoice.classList.add("actif");
 		impactChoice.classList.remove("inactif");
 		impactChoice.style.opacity = 1;

@@ -3,7 +3,8 @@
 	@extend .absolute-center;
 	width: 90%;
 	max-width: 750px;
-	max-height: 90%;
+	max-height: 90vh;
+	overflow: scroll;
 	h3 {
 		text-align: center;
 		margin-bottom: 2em;
@@ -15,6 +16,9 @@
 		a {
 			margin-left: 2em;
 			color: aqua;
+			@include tablet-breakpoint {
+				font-size: 0.8em;
+			}
 		}
 	}
 }

@@ -9,6 +9,12 @@
 	}
 	.nes-select {
 		margin-bottom: 2em;
+		select {
+			@include tablet-breakpoint {
+				font-size: 0.8em;
+				width: 90%;
+			}
+		}
 	}
 	.checkbox-container {
 		display: flex;

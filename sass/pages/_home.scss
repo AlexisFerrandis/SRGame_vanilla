@@ -12,14 +12,23 @@ h1 {
 	font-size: 5em;
 	text-align: center;
 	padding-top: 2em;
+	@include tablet-breakpoint {
+		font-size: 3em;
+	}
 }
 .home-main {
 	display: flex;
 	justify-content: space-around;
 	margin-top: 8em;
 	button {
+		@include tablet-breakpoint {
+			font-size: 0.9em;
+		}
 		min-width: 9em;
 		transition: $short-anim;
+		@include tablet-breakpoint {
+			min-width: unset;
+		}
 		&:hover {
 			transform: scale(1.02);
 		}
@@ -29,7 +38,7 @@ h1 {
 	}
 }
 #saveBtnContainer {
-	margin: 1em;
+	margin-top: 1em;
 	display: flex;
 	justify-content: center;
 }
@@ -39,9 +48,15 @@ footer {
 	flex-direction: column;
 	width: 16em;
 	justify-content: space-around;
-	margin: 12em auto;
+	margin: 12em auto 0;
 	font-size: 0.7em;
+	@include tablet-breakpoint {
+		margin: 1em auto 0;
+	}
 	#homeOptionsBtn {
 		margin-bottom: 3em;
+		@include tablet-breakpoint {
+			margin-bottom: 1em;
+		}
 	}
 }

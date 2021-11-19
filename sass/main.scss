@@ -2,11 +2,13 @@
 
 @import "./utils/variables";
 @import "./utils/extensions";
+@import "./utils/mixins";
 
 @import "./components/buttons";
 @import "./components/pause-btn";
 @import "./components/input";
 @import "./components/choice-impact-disclaimer";
+@import "./components/hearts";
 @import "./components/new-item-display";
 @import "./components//white-screen";
 @import "./components/sword-slash";

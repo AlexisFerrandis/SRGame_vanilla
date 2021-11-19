@@ -1,7 +1,6 @@
 .header {
 	display: flex;
 	justify-content: space-between;
-	padding: 1em;
 }
 .main {
 	width: 90%;
@@ -13,10 +12,22 @@
 	}
 	#dialogContainer {
 		margin: 1.5em 0;
+		min-height: 8.5em;
+		@include tablet-breakpoint {
+			font-size: 0.9em;
+		}
+		.title {
+			@include tablet-breakpoint {
+				font-size: 0.9em;
+			}
+		}
 	}
 	#userOptions {
 		@extend .flex-center;
 		flex-direction: column;
+		@include tablet-breakpoint {
+			font-size: 0.9em;
+		}
 		.options {
 			color: white;
 			width: 80%;
