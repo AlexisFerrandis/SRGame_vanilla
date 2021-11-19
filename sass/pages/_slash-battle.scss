@@ -1,0 +1,50 @@
+#opponentContainer {
+	@extend .absolute-center;
+	animation: opponentMovement 15s infinite ease-in-out;
+}
+#savorContainer {
+	@extend .absolute-center;
+	img {
+		transform: scale(1.8);
+	}
+	#petHeart {
+		@extend .absolute-center;
+		transform: scale(16) translate(-55%, -55%);
+	}
+}
+#opponentLifeBar {
+	width: 98%;
+	max-width: 700px;
+	position: absolute;
+	bottom: 2em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#divinilameFight {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	z-index: 9;
+}
+#swordPerimter {
+	cursor: none;
+}
+@keyframes opponentMovement {
+	0% {
+		transform: translate(-50%, -50%);
+	}
+	25% {
+		transform: translate(30%, 10%);
+	}
+	50% {
+		transform: translate(-90%, 70%);
+	}
+	75% {
+		transform: translate(-90%, 20%);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}

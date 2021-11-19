@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.absolute-center, #pauseMenu, #newItemDisplay, #parameterContainer, #chaptersContainer, #impact-container .userImpactChoice:before, #threeItemContainer, .main {
+.absolute-center, #pauseMenu, #newItemDisplay, #parameterContainer, #chaptersContainer, #impact-container .userImpactChoice:before, #threeItemContainer, .main, #opponentContainer, #savorContainer, #savorContainer #petHeart {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -553,6 +553,91 @@ footer #homeOptionsBtn {
   width: 100px;
 }
 
+#opponentContainer {
+  -webkit-animation: opponentMovement 15s infinite ease-in-out;
+          animation: opponentMovement 15s infinite ease-in-out;
+}
+
+#savorContainer img {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+#savorContainer #petHeart {
+  -webkit-transform: scale(16) translate(-55%, -55%);
+          transform: scale(16) translate(-55%, -55%);
+}
+
+#opponentLifeBar {
+  width: 98%;
+  max-width: 700px;
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#divinilameFight {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9;
+}
+
+#swordPerimter {
+  cursor: none;
+}
+
+@-webkit-keyframes opponentMovement {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  25% {
+    -webkit-transform: translate(30%, 10%);
+            transform: translate(30%, 10%);
+  }
+  50% {
+    -webkit-transform: translate(-90%, 70%);
+            transform: translate(-90%, 70%);
+  }
+  75% {
+    -webkit-transform: translate(-90%, 20%);
+            transform: translate(-90%, 20%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes opponentMovement {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  25% {
+    -webkit-transform: translate(30%, 10%);
+            transform: translate(30%, 10%);
+  }
+  50% {
+    -webkit-transform: translate(-90%, 70%);
+            transform: translate(-90%, 70%);
+  }
+  75% {
+    -webkit-transform: translate(-90%, 20%);
+            transform: translate(-90%, 20%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -567,6 +652,6 @@ footer #homeOptionsBtn {
 body {
   max-width: 1920px;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
