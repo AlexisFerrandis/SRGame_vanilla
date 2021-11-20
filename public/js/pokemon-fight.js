@@ -11,12 +11,12 @@ function displayOpponent(opponentImg, opponentName) {
 // Chevrette movement and Atck
 function chevretteMovingAndAttacking() {
 	let chevretteAtck = document.querySelectorAll(".chevrette-atck");
-
 	for (let i = 0; i < chevretteAtck.length; i++) {
 		chevretteAtck[i].addEventListener("click", () => {
 			let chevretteImg = document.getElementById("battleChevretteImg");
 			chevretteImg.style.transition = "400ms";
 			chevretteImg.style.transform = "translateX(100px)";
+			document.getElementById("battleChevretteAttackContainer").style.pointerEvents = "none";
 			setTimeout(() => {
 				chevretteImg.style.transform = "translateX(0px)";
 			}, 400);
@@ -65,6 +65,7 @@ function chevretteAtckSprite(imgName) {
 
 // Opponent msg and atck after Chevrette's
 function OpponentOpposition(opponentName) {
+	document.getElementById("battleChevretteAttackContainer").style.pointerEvents = " auto";
 	switch (opponentName) {
 		case "Chèvre Noir":
 			let messages = ["Aie! Tu vas gouter à ma science !", "Belle attaque ! Mais connais tu Pythagore ?", "Argh! Tesla je t'invoque !", "Dayum ! Incantation... Kaki... E Equal MC DOS !"];

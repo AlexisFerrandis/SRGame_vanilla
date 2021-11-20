@@ -43,6 +43,19 @@ document.getElementById(">").addEventListener("click", () => {
 														displayThePet();
 														document.getElementById("threeItemContainer").style.display = "none";
 														dialogActualisation("Chevrette", `Merci énormément, qu'il est beau!`, "Merci <3");
+
+														document.getElementById("pauseBtn").addEventListener("click", () => {
+															playSoundEffect("menu-click.wav");
+															document.getElementById("pauseMenu").style.display = "block";
+														});
+														document.getElementById("closePauseMenuBtn").addEventListener("click", () => {
+															playSoundEffect("menu-click.wav");
+															document.getElementById("pauseMenu").style.display = "none";
+														});
+														document.getElementById("saveAndQuitBtn").addEventListener("click", () => {
+															localStorage.setItem("userSave", window.location.href);
+															location.href = "../../../index.html";
+														});
 														document.getElementById(">").addEventListener("click", () => {
 															dialogActualisation("Violight", `Ce n’est rien.`, ">");
 															document.getElementById(">").addEventListener("click", () => {

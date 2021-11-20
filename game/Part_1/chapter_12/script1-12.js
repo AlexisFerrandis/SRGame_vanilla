@@ -24,6 +24,7 @@ document.getElementById(">").addEventListener("click", () => {
 						dialogActualisation("Defranco", `Geuh.`, ">");
 						document.getElementById(">").addEventListener("click", () => {
 							dialogActualisation("Chevrette", `Ha bah elle est morte du coup.`, ">");
+							characterFalling("defr");
 							document.getElementById(">").addEventListener("click", () => {
 								dialogActualisation("Chevrette", `Tu te débrouilles bien ${userName}.`, "Merci.");
 								document.getElementById(">").addEventListener("click", () => {

@@ -50,7 +50,7 @@ document.getElementById(">").addEventListener("click", () => {
 																document.getElementById(">").addEventListener("click", () => {
 																	document.getElementById("swordSlash").style.display = "none";
 																	characterFalling("soui");
-																	dialogActualisation("Chevrette", `Tu m’as sauvé ${userName}`, ">");
+																	dialogActualisation("Chevrette", `Tu m’as sauvé ${userName}.`, ">");
 																	document.getElementById(">").addEventListener("click", () => {
 																		dialogActualisation("Chevrette", `J’ai une dette envers toi !`, "TKT Chevrette.");
 																		document.getElementById(">").addEventListener("click", () => {

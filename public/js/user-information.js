@@ -22,6 +22,12 @@ function refreshUserLife(val) {
 	if (userUpdate < 0) {
 		userUpdate = 0;
 	}
+	if (val > 0) {
+		playSoundEffect("heart-plus.wav");
+	}
+	if (val < 0) {
+		playSoundEffect("heart-minus.wav");
+	}
 	localStorage.setItem("userLife", userUpdate);
 	switch (userUpdate) {
 		case 5:
@@ -41,12 +47,14 @@ function refreshUserLife(val) {
             <i class="nes-icon is-medium is-transparent heart"></i>`;
 			break;
 		case 3:
-			lifeContainer.innerHTML = `
+			if (lifeContainer) {
+				lifeContainer.innerHTML = `
             <i class="nes-icon is-medium heart"></i>
             <i class="nes-icon is-medium heart"></i>
             <i class="nes-icon is-medium heart"></i>
             <i class="nes-icon is-medium is-transparent heart"></i>
             <i class="nes-icon is-medium is-transparent heart"></i>`;
+			}
 			break;
 		case 2:
 			lifeContainer.innerHTML = `

@@ -77,7 +77,7 @@ window.onload = document.body.innerHTML +=
                 <a href="./game/Part_2/chapter_1/index2-1.html">1. Monsieur Seguin<a></br>
                 <a href="./game/Part_2/chapter_2/index2-2.html">2. La carte Kiwi<a></br>
                 <a href="./game/Part_2/chapter_3/index2-3.html">3. I play Pokemon Go<a></br>
-                <a href="./game/Part_2/chapter_4/index2-4.html">4. Et de un<a></br>
+                <a href="./game/Part_2/chapter_4/index2-4.html">4. Premier à tomber<a></br>
                 <a href="./game/Part_2/chapter_5/index2-5.html">5. Gare Réaumur<a></br>
             </div>
         </div>

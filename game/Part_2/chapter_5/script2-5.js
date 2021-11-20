@@ -16,3 +16,16 @@ setTimeout(() => {
 		dialogActualisation("Chevrette", `Et on est pas sur d'avoir un train.`, ">");
 	});
 }, 4000);
+
+document.getElementById("pauseBtn").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
+	document.getElementById("pauseMenu").style.display = "block";
+});
+document.getElementById("closePauseMenuBtn").addEventListener("click", () => {
+	playSoundEffect("menu-click.wav");
+	document.getElementById("pauseMenu").style.display = "none";
+});
+document.getElementById("saveAndQuitBtn").addEventListener("click", () => {
+	localStorage.setItem("userSave", window.location.href);
+	location.href = "../../../index.html";
+});
