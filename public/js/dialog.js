@@ -229,7 +229,21 @@ function whiteScreen() {
 	}, 3000);
 }
 
-// Black screen
+// Black screen to display
+function blackScreenToDisplay(message) {
+	document.body.innerHTML += `<div id ="blackScreenWithMessage"></div>`;
+	let blackScreen = document.getElementById("blackScreenWithMessage");
+	blackScreen.innerHTML = message;
+	blackScreen.style.opacity = 1;
+	setTimeout(() => {
+		blackScreen.style.opacity = 0;
+	}, this.animationDelay);
+	setTimeout(() => {
+		blackScreen.style.display = "none";
+	}, 5000);
+}
+
+// Black screen to href
 function blackScreenToLocation(path) {
 	document.body.innerHTML += `<div id ="blackScreen"></div>`;
 	let blackScreen = document.getElementById("blackScreen");

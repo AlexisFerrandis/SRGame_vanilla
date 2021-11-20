@@ -107,7 +107,7 @@ document.getElementById(">").addEventListener("click", () => {
 																																			document.getElementById(">").addEventListener("click", () => {
 																																				dialogActualisation("Chevrette", `Nous avons clairement besoin d'un peu de repos.`, ">");
 																																				document.getElementById(">").addEventListener("click", () => {
-																																					location.href = "../chapter_4/index2-4.html";
+																																					location.href = "../chapter_5/index2-5.html";
 																																				});
 																																			});
 																																		});

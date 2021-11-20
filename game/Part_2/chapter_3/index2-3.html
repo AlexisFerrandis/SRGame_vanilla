@@ -15,20 +15,42 @@
 
 		<div id="battleContainer">
 			<div id="battleOpponentContainer">
-				<div id="battleOpponentLifeAndName"></div>
+				<div id="battleOpponentLifeAndName" class="nes-container is-dark">
+					<div id="battleOpponentName"></div>
+					<div id="battleOpponentLife">
+						<progress id="battleOpponentLifeBar" class="nes-progress is-success" value="100" max="100"></progress>
+						<div id="opponentLifeValue">100 hp</div>
+					</div>
+				</div>
 				<div id="battleOpponentImg"></div>
 			</div>
 
 			<div id="battleChevretteContainer">
-				<div id="battleChevretteLifeAndName"></div>
-				<div id="battleChevretteImg"></div>
+				<div id="battleChevretteImg">
+					<img src="../../../public/assets/img/chevrette-sprite/chevrette-night.gif" alt="" />
+				</div>
+				<div id="battleChevretteLifeAndName" class="nes-container is-dark">
+					<div id="battleChevretteName">
+						<h3>Chevrette</h3>
+					</div>
+					<div id="battleChevretteLife">
+						<progress id="battleChevretteLifeBar" class="nes-progress is-success" value="100" max="100"></progress>
+						<div id="chevretteLifeValue">100 hp</div>
+					</div>
+				</div>
 			</div>
 
-			<div id="battleChevretteAttackContainer"></div>
+			<div id="battleChevretteAttackContainer">
+				<button class="nes-btn chevrette-atck" id="fireDance">Fire Dance</button>
+				<button class="nes-btn chevrette-atck" id="pipoSmash">Pipo Smash</button>
+				<button class="nes-btn chevrette-atck" id="spatuleVenimeuse">Spatule Venimeuse</button>
+				<button class="nes-btn chevrette-atck" id="shazamAtoumini">Shazam Atoumini</button>
+			</div>
 		</div>
 
 		<script src="../../../public/js/dialog.js"></script>
 		<script src="../../../public/js/user-information.js"></script>
+		<script src="../../../public/js/pokemon-fight.js"></script>
 		<script src="./script2-3.js"></script>
 	</body>
 </html>
