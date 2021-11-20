@@ -66,7 +66,7 @@ window.onload = document.body.innerHTML +=
                 <a href="./game/Part_1/chapter_7/index1-7.html">7. Noblesse authentique</br>
                 <a href="./game/Part_1/chapter_7-story/index1-7-story.html">0. Raconte moi une histoire</br>
                 <a href="./game/Part_1/chapter_8/index1-8.html">8. Smol doggo</br>
-                <a href="./game/Part_1/chapter_9/index1-9.html">9. I play Pokemon Go</br>
+                <a href="./game/Part_1/chapter_9/index1-9.html">9. Mais vous fumez monsieur</br>
                 <a href="./game/Part_1/chapter_10/index1-10.html">10. Souilley</br>
                 <a href="./game/Part_1/chapter_11/index1-11.html">11. La plouille</br>
                 <a href="./game/Part_1/chapter_12/index1-12.html">12. Rédemption du savoir</br>
@@ -76,6 +76,8 @@ window.onload = document.body.innerHTML +=
                 <h4>Part II</h4>
                 <a href="./game/Part_2/chapter_1/index2-1.html">1. Monsieur Seguin<a></br>
                 <a href="./game/Part_2/chapter_2/index2-2.html">2. La carte Kiwi<a></br>
+                <a href="./game/Part_2/chapter_3/index2-3.html">3. I play Pokemon Go<a></br>
+                <a href="./game/Part_2/chapter_4/index2-4.html">4. Gare Réaumur<a></br>
             </div>
         </div>
     </div>

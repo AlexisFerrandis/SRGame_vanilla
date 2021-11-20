@@ -7,7 +7,7 @@ userOptions(">");
 displayChevrette();
 
 document.getElementById(">").addEventListener("click", () => {
-	dialogActualisation("Chevrette", `Comment vas tu ${userName}`, "Ca va.", "Un peu fatigué.", "Belle gueule de bois.");
+	dialogActualisation("Chevrette", `Comment vas tu ${userName} ?`, "Ca va.", "Un peu fatigué.", "Belle gueule de bois.");
 	let options = document.querySelectorAll(".options");
 	for (let i = 0; i < options.length; i++) {
 		options[i].addEventListener("click", () => {

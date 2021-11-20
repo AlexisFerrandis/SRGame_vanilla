@@ -210,6 +210,13 @@ function characterFalling(imgId) {
 	document.getElementById(imgId).style.transform = "translateY(150px)";
 }
 
+// Character leaving
+function characterLeaving(imgId) {
+	document.getElementById(imgId).style.transition = "1000ms";
+	document.getElementById(imgId).style.opacity = "0";
+	document.getElementById(imgId).style.transform = "translateX(150px)";
+}
+
 // White screen
 function whiteScreen() {
 	document.body.innerHTML += `<div id ="whiteScreen"></div>`;

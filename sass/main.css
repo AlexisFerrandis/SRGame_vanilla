@@ -938,6 +938,14 @@ main {
   }
 }
 
+#battleContainer {
+  width: 95%;
+  max-width: 900px;
+  height: 100vh;
+  border: solid 2px blue;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;

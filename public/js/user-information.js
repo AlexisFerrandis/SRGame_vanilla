@@ -136,3 +136,6 @@ document.getElementById("saveAndQuitBtn").addEventListener("click", () => {
 	localStorage.setItem("userSave", window.location.href);
 	location.href = "../../../index.html";
 });
+
+/*** SRG MEMBERS  ***/
+let srgMembers = ["chevreNoir true", "darkMahe true", "teteDeCanard true", "martin", "bito"];

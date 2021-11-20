@@ -43,7 +43,6 @@ function refreshDialogOpponent(txt1, txt2, txt3) {
 (function mouseAsASword() {
 	document.getElementById("swordPerimter").addEventListener("mousemove", (e) => {
 		let sword = document.getElementById("divinilameFight");
-		console.log(e.clientX);
 		sword.style.left = e.clientX + "px";
 		sword.style.top = e.clientY + "px";
 	});

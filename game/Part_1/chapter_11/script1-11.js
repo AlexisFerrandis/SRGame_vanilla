@@ -1,4 +1,4 @@
-refreshUserLife(0);
+refreshUserLife(1);
 storyTextDisplay("VOUS AVEZ VOS CARNETS JEUNES GENS ???");
 opponentMovment("defrancoformed.gif");
 slashBattleUserLife();
