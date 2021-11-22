@@ -30,7 +30,7 @@ document.getElementById(">").addEventListener("click", () => {
 									refreshUserLife(-1);
 									refreshImpactChoice();
 									document.getElementById(">").addEventListener("click", () => {
-										dialogActualisation("Shnoix", "Retour à la case départ !", ">");
+										dialogActualisation("Shinoix", "Retour à la case départ !", ">");
 										document.getElementById(">").addEventListener("click", () => {
 											window.location.reload();
 										});

@@ -55,7 +55,7 @@ document.getElementById(">").addEventListener("click", () => {
 																					document.getElementById(">").addEventListener("click", () => {
 																						dialogActualisation("Chèvre noir", `L'entité, elle doit me permettre de savoir!`, ">");
 																						document.getElementById(">").addEventListener("click", () => {
-																							dialogActualisation("Chèvre noir", `De répondre à la question ultime !`, "Coup dur pour Guillaume.", "La question ultime ?");
+																							dialogActualisation("Chèvre noir", `De répondre à la question ultime !`, "Grande question.", "La question ultime ?");
 																							refreshImpactChoice();
 
 																							document.getElementById(">").addEventListener("click", () => {

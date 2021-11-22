@@ -180,6 +180,12 @@ function characterNameColor(name) {
 		case "Chèvre noir":
 			return "black";
 			break;
+		case "Vincent Derez":
+			return "crimson";
+			break;
+		case "Batiatus":
+			return "aquamarine";
+			break;
 
 		default:
 			return "white";
