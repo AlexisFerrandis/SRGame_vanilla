@@ -101,7 +101,7 @@ document.getElementById("partTwo").addEventListener("click", () => {
 });
 document.getElementById("partThree").addEventListener("click", () => {
 	playSoundEffect("menu-click.wav");
-	blackScreenToLocation("./game/Part_3/chapter_1/index3-1.html");
+	alert("Bientôt disponible !");
 });
 
 // Display continue Btn if they're is a save

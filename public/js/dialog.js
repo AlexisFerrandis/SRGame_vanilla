@@ -192,6 +192,9 @@ function characterNameColor(name) {
 		case "Boyer":
 			return "teal";
 			break;
+		case "Teomousse":
+			return "RoyalBlue";
+			break;
 
 		default:
 			return "white";
