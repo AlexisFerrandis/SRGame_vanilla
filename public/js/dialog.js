@@ -189,6 +189,9 @@ function characterNameColor(name) {
 		case "Tête de Canard":
 			return "goldenrod";
 			break;
+		case "Boyer":
+			return "teal";
+			break;
 
 		default:
 			return "white";

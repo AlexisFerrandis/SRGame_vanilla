@@ -81,6 +81,9 @@ window.onload = document.body.innerHTML +=
                 <a href="./game/Part_2/chapter_5/index2-5.html">5. Gare Réaumur<a></br>
                 <a href="./game/Part_2/chapter_6/index2-6.html">6. Un Lama ?<a></br>
                 <a href="./game/Part_2/chapter_7/index2-7.html">7. Il imitait une pieuvre<a></br>
+                <a href="./game/Part_2/chapter_8/index2-8.html">8. Poussière sous le tapis<a></br>
+                <a href="./game/Part_2/chapter_9/index2-9.html">9. Le plus gentil<a></br>
+                <a href="./game/Part_2/chapter_10/index2-10.html">10. Ce rêve bleu<a></br>
             </div>
         </div>
     </div>

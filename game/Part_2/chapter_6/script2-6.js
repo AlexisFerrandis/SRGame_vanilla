@@ -64,7 +64,7 @@ document.getElementById(">").addEventListener("click", () => {
 																						document.getElementById(">").addEventListener("click", () => {
 																							dialogActualisation("Chevrette", `Qui est à l'origine du ténébrement?`, ">");
 																							document.getElementById(">").addEventListener("click", () => {
-																								dialogActualisation("Chevrette", `Je redoutais cette question.`, ">");
+																								dialogActualisation("Tête de Canard", `Je redoutais cette question.`, ">");
 																								document.getElementById(">").addEventListener("click", () => {
 																									dialogActualisation("Tête de Canard", `Ne vous méprenez pas, mais il s'agit..`, ">");
 																									document.getElementById(">").addEventListener("click", () => {
@@ -101,7 +101,7 @@ document.getElementById(">").addEventListener("click", () => {
 																																						});
 																																					});
 
-																																					document.getElementById(">").addEventListener("click", () => {
+																																					document.getElementById("mais").addEventListener("click", () => {
 																																						refreshImpactChoice();
 																																						dialogActualisation("Tête de Canard", `Le prix est lourd.`, ">");
 																																						document.getElementById(">").addEventListener("click", () => {
@@ -194,7 +194,7 @@ document.getElementById(">").addEventListener("click", () => {
 															dialogActualisation("Tête de Canard", `Je vous écoute. Je répondrai à vos questions.`, ">");
 
 															document.getElementById(">").addEventListener("click", () => {
-																dialogActualisation("Chevrette", `Où se trouve le SainRembrion`, ">");
+																dialogActualisation("Chevrette", `Où se trouve le SainRembrion ?`, ">");
 																document.getElementById(">").addEventListener("click", () => {
 																	dialogActualisation("Tête de Canard", `Je ne sais pas...`, ">");
 																	document.getElementById(">").addEventListener("click", () => {
@@ -214,7 +214,7 @@ document.getElementById(">").addEventListener("click", () => {
 																								document.getElementById(">").addEventListener("click", () => {
 																									dialogActualisation("Chevrette", `Qui est à l'origine du ténébrement?`, ">");
 																									document.getElementById(">").addEventListener("click", () => {
-																										dialogActualisation("Chevrette", `Je redoutais cette question.`, ">");
+																										dialogActualisation("Tête de Canard", `Je redoutais cette question.`, ">");
 																										document.getElementById(">").addEventListener("click", () => {
 																											dialogActualisation("Tête de Canard", `Ne vous méprenez pas, mais il s'agit..`, ">");
 																											document.getElementById(">").addEventListener("click", () => {
@@ -251,7 +251,7 @@ document.getElementById(">").addEventListener("click", () => {
 																																								});
 																																							});
 
-																																							document.getElementById(">").addEventListener("click", () => {
+																																							document.getElementById("mais").addEventListener("click", () => {
 																																								refreshImpactChoice();
 																																								dialogActualisation("Tête de Canard", `Le prix est lourd.`, ">");
 																																								document.getElementById(">").addEventListener("click", () => {

@@ -32,7 +32,7 @@ document.getElementById(">").addEventListener("click", () => {
 											document.getElementById(">").addEventListener("click", () => {
 												dialogActualisation("Chèvre noir", `Ho !`, ">");
 												document.getElementById(">").addEventListener("click", () => {
-													dialogActualisation("Chèvre noir", `Pète un coup Chevrette.`, ">");
+													dialogActualisation("Chèvre noir", `Pètes un coup Chevrette.`, ">");
 													document.getElementById(">").addEventListener("click", () => {
 														dialogActualisation("Chèvre noir", `Ce sera une expérience extraordianire dans le pire des cas.`, ">");
 														document.getElementById(">").addEventListener("click", () => {

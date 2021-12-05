@@ -11,7 +11,6 @@ letterByLetter("...");
 userOptions(">");
 
 document.getElementById(">").addEventListener("click", () => {
-	refreshImpactChoice();
 	dialogActualisation("Tête de Canard", `Le prix est lourd.`, ">");
 	document.getElementById(">").addEventListener("click", () => {
 		dialogActualisation("Tête de Canard", `Mais c'est un sacrifice nécessaire.`, ">");
@@ -29,7 +28,7 @@ document.getElementById(">").addEventListener("click", () => {
 							document.getElementById(">").addEventListener("click", () => {
 								dialogActualisation("Chevrette", `Allons les dénicher ${userName} !`, ">");
 								document.getElementById(">").addEventListener("click", () => {
-									location.href = "./chapter_9/index2-9.html";
+									location.href = "../chapter_9/index2-9.html";
 								});
 							});
 						});
