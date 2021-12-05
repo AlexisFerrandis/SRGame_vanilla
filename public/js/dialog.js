@@ -186,6 +186,9 @@ function characterNameColor(name) {
 		case "Batiatus":
 			return "aquamarine";
 			break;
+		case "Tête de Canard":
+			return "goldenrod";
+			break;
 
 		default:
 			return "white";

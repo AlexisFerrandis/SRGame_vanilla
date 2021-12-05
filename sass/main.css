@@ -285,7 +285,7 @@
 #charactersContainer #characterThree img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 15em;
+  width: 16em;
 }
 
 @media (max-width: 600px) {
