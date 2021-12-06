@@ -11,7 +11,7 @@ h1 {
 	color: black;
 	font-size: 5em;
 	text-align: center;
-	padding-top: 2em;
+	padding-top: 1em;
 	@include tablet-breakpoint {
 		font-size: 3em;
 	}
@@ -19,7 +19,7 @@ h1 {
 .home-main {
 	display: flex;
 	justify-content: space-around;
-	margin: 8em auto 0;
+	margin: 4em auto 0;
 	button {
 		@include tablet-breakpoint {
 			font-size: 0.9em;

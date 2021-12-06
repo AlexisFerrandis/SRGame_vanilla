@@ -85,6 +85,7 @@ window.onload = document.body.innerHTML +=
                 <a href="./game/Part_2/chapter_9/index2-9.html">9. Le plus gentil</a></br>
                 <a href="./game/Part_2/chapter_10/index2-10.html">10. Ce rêve bleu</a></br>
                 <a href="./game/Part_2/chapter_11/index2-11.html">11. La Plagne</a></br>
+                <a href="./game/Part_2/chapter_12/index2-12.html">12. Pelure d'Oignon</a></br>
             </div>
         </div>
     </div>
