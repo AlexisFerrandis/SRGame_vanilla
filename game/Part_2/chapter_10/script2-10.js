@@ -28,7 +28,7 @@ document.getElementById(">").addEventListener("click", () => {
 									dialogActualisation("Teomousse", `Je suis Teomousse.`, ">");
 									displayInterlocutor("teomousse.gif");
 									document.getElementById(">").addEventListener("click", () => {
-										dialogActualisation("Chevrette", `Quel beauté...`, "Magnifique.");
+										dialogActualisation("Chevrette", `Quel homme...`, "Magnifique.");
 										document.getElementById(">").addEventListener("click", () => {
 											dialogActualisation("Teomousse", `Mes enfants, comment puis je vous aider ?`, ">");
 											document.getElementById(">").addEventListener("click", () => {
@@ -42,25 +42,50 @@ document.getElementById(">").addEventListener("click", () => {
 															document.getElementById(">").addEventListener("click", () => {
 																dialogActualisation("Teomousse", `Pour cela, je dois savoir si vous êtes capable de la manier.`, ">");
 																document.getElementById(">").addEventListener("click", () => {
-																	dialogActualisation("Chevrette", `Nous le sommes !`, "Wi.");
+																	dialogActualisation("Teomousse", `Et que votre coeur est bon.`, ">");
 																	document.getElementById(">").addEventListener("click", () => {
-																		dialogActualisation("Teomousse", `Je vais vérifier ça.`, ">");
+																		dialogActualisation("Chevrette", `Nous le sommes !`, "Wi.");
 																		document.getElementById(">").addEventListener("click", () => {
-																			dialogActualisation("Teomousse", `Pour ce faire,`, ">");
+																			dialogActualisation("Teomousse", `Je vais vérifier ça.`, ">");
 																			document.getElementById(">").addEventListener("click", () => {
-																				dialogActualisation("Teomousse", `Je vais analyser l'historique de ${userName}.`, ">");
+																				dialogActualisation("Teomousse", `Pour ce faire,`, ">");
 																				document.getElementById(">").addEventListener("click", () => {
-																					dialogActualisation("Teomousse", `...`, ">");
+																					dialogActualisation("Teomousse", `Je vais analyser l'historique de ${userName}.`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
-																						dialogActualisation("Teomousse", `Ho...`, ">");
+																						dialogActualisation("Teomousse", `...`, ">");
 																						document.getElementById(">").addEventListener("click", () => {
-																							dialogActualisation("Teomousse", `...`, ">");
+																							dialogActualisation("Teomousse", `Ho...`, ">");
 																							document.getElementById(">").addEventListener("click", () => {
-																								dialogActualisation("Teomousse", `Vous voulez un verre d'eau?`, ">");
+																								dialogActualisation("Teomousse", `...`, ">");
 																								document.getElementById(">").addEventListener("click", () => {
-																									dialogActualisation("Teomousse", `...`, ">");
+																									dialogActualisation("Teomousse", `Vous voulez un verre d'eau ?`, ">");
 																									document.getElementById(">").addEventListener("click", () => {
-																										dialogActualisation("Teomousse", `C'est une âme pure.`, ">");
+																										dialogActualisation("Teomousse", `...`, ">");
+																										document.getElementById(">").addEventListener("click", () => {
+																											dialogActualisation("Teomousse", `C'est une âme pure.`, ">");
+																											document.getElementById(">").addEventListener("click", () => {
+																												dialogActualisation("Teomousse", `Voici l'épée de la lune.`, ">");
+																												playSoundEffect("new-item.mp3");
+																												newItemDisplay("teolame.gif");
+																												document.getElementById(">").addEventListener("click", () => {
+																													dialogActualisation("Chevrette", `De toute beauté !`, ">");
+																													document.getElementById("newItemDisplay").remove();
+																													thisIsMySword("teolame.gif");
+																													document.getElementById(">").addEventListener("click", () => {
+																														dialogActualisation("Teomousse", `Petit animal, ${userName}, je vous souhaite d'être invincible dans votre combat.`, ">");
+																														document.getElementById(">").addEventListener("click", () => {
+																															dialogActualisation("Teomousse", `Pleins de bisous.`, ">");
+																															document.getElementById(">").addEventListener("click", () => {
+																																dialogActualisation("Chevrette", `Merci Teomousse !`, "<3");
+																																document.getElementById(">").addEventListener("click", () => {
+																																	location.href = "../chapter_11/index2-11.html";
+																																});
+																															});
+																														});
+																													});
+																												});
+																											});
+																										});
 																									});
 																								});
 																							});
