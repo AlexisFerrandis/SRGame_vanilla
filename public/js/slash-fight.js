@@ -42,14 +42,20 @@ function refreshDialogOpponent(txt1, txt2, txt3) {
 // Cursor as a sword
 (function mouseAsASword() {
 	document.getElementById("swordPerimter").addEventListener("mousemove", (e) => {
-		let sword = document.getElementById("divinilameFight");
-		sword.style.left = e.clientX + "px";
-		sword.style.top = e.clientY + "px";
+		if (document.getElementById("divinilameFight")) {
+			let sword = document.getElementById("divinilameFight");
+			sword.style.left = e.clientX + "px";
+			sword.style.top = e.clientY + "px";
+		} else if (document.getElementById("teolameFight")) {
+			let sword = document.getElementById("teolameFight");
+			sword.style.left = e.clientX + "px";
+			sword.style.top = e.clientY + "px";
+		}
 	});
 })();
 
 // Listener mouse and opponent in contact
-(function hitOpponent() {
+function hitOpponent(nextPath) {
 	opponentLifeBar = 1000;
 	document.getElementById("opponentContainer").addEventListener("mousemove", (e) => {
 		opponentLifeBar--;
@@ -58,8 +64,8 @@ function refreshDialogOpponent(txt1, txt2, txt3) {
 			playSoundEffect("monster-scream.wav");
 			document.getElementById("opponentLifeBar").style.display = "none";
 			setTimeout(() => {
-				location.href = "../chapter_12/index1-12.html";
+				location.href = nextPath;
 			}, 2200);
 		}
 	});
-})();
+}

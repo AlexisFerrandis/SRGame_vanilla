@@ -34,7 +34,7 @@ document.getElementById(">").addEventListener("click", () => {
 												document.getElementById(">").addEventListener("click", () => {
 													dialogActualisation("Chèvre noir", `Pètes un coup Chevrette.`, ">");
 													document.getElementById(">").addEventListener("click", () => {
-														dialogActualisation("Chèvre noir", `Ce sera une expérience extraordianire dans le pire des cas.`, ">");
+														dialogActualisation("Chèvre noir", `Ce sera une expérience extraordinaire dans le pire des cas.`, ">");
 														document.getElementById(">").addEventListener("click", () => {
 															dialogActualisation("Chèvre noir", `J'espère que l'étude de l'atomisation pourra m'apporter certaines réponses.`, ">");
 															document.getElementById(">").addEventListener("click", () => {

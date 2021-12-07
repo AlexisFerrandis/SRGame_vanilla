@@ -37,11 +37,11 @@ document.getElementById(">").addEventListener("click", () => {
 												document.getElementById(">").addEventListener("click", () => {
 													dialogActualisation("Chevrette", `J'ai du mal à comprendre.`, ">");
 													document.getElementById(">").addEventListener("click", () => {
-														dialogActualisation("Chèvre noir", `C'est très simple.`, ">");
+														dialogActualisation("Chèvre noir", `C'est simple.`, ">");
 														document.getElementById(">").addEventListener("click", () => {
-															dialogActualisation("Chèvre noir", `Comme à ton habitude,`, ">");
+															dialogActualisation("Chèvre noir", `Nous avons besoin que l'entité gagne en puissance.`, ">");
 															document.getElementById(">").addEventListener("click", () => {
-																dialogActualisation("Chèvre noir", `TU AS TOUT CASSE ! `, ">");
+																dialogActualisation("Chèvre noir", `Mais tu es en train de casser nos plans.`, ">");
 																document.getElementById(">").addEventListener("click", () => {
 																	dialogActualisation("Chevrette", `Quoi?.. `, ">");
 																	document.getElementById(">").addEventListener("click", () => {
@@ -53,9 +53,9 @@ document.getElementById(">").addEventListener("click", () => {
 																				document.getElementById(">").addEventListener("click", () => {
 																					dialogActualisation("Chevrette", `Chèvre noir, qu'est ce qui se passe?`, ">");
 																					document.getElementById(">").addEventListener("click", () => {
-																						dialogActualisation("Chèvre noir", `L'entité, elle doit me permettre de savoir!`, ">");
+																						dialogActualisation("Chèvre noir", `Le SainRembrion, il doit nous permettre de savoir!`, ">");
 																						document.getElementById(">").addEventListener("click", () => {
-																							dialogActualisation("Chèvre noir", `De répondre à la question ultime !`, "Grande question.", "La question ultime ?");
+																							dialogActualisation("Chèvre noir", `De répondre à la question ultime !`, "Bonne question !", "La question ultime ?");
 																							refreshImpactChoice();
 
 																							document.getElementById(">").addEventListener("click", () => {
@@ -68,7 +68,7 @@ document.getElementById(">").addEventListener("click", () => {
 																										document.getElementById(">").addEventListener("click", () => {
 																											dialogActualisation("Chèvre noir", `Du dudu du du du du...`, ">");
 																											document.getElementById(">").addEventListener("click", () => {
-																												dialogActualisation("Chèvre noir", `DUEL!`, ">");
+																												dialogActualisation("Chèvre noir", `DUEL !`, ">");
 																												document.getElementById(">").addEventListener("click", () => {
 																													location.href = "../chapter_3/index2-3.html";
 																												});

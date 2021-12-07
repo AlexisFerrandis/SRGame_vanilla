@@ -867,6 +867,16 @@ main {
   z-index: 9;
 }
 
+#teolameFight {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9;
+}
+
 #swordPerimter {
   cursor: none;
 }
