@@ -195,6 +195,8 @@ function characterNameColor(name) {
 		case "Teomousse":
 			return "RoyalBlue";
 			break;
+		case "Démouniraque":
+			return "brown";
 
 		default:
 			return "white";
