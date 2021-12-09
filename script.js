@@ -87,6 +87,7 @@ window.onload = document.body.innerHTML +=
                 <a href="./game/Part_2/chapter_11/index2-11.html">11. La Plagne</a></br>
                 <a href="./game/Part_2/chapter_12/index2-12.html">12. Pelure d'Oignon</a></br>
                 <a href="./game/Part_2/chapter_13/index2-13.html">13. Tétine moisit</a></br>
+                <a href="./game/Part_2/chapter_14/index2-14.html">14. Il était une fois</a></br>
             </div>
         </div>
     </div>
