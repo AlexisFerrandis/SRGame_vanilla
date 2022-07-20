@@ -340,16 +340,16 @@ function playSoundEffect(soundName) {
 				theSound.volume = 0.05;
 				break;
 			case "2":
-				theSound.volume = 0.12;
+				theSound.volume = 0.07;
 				break;
 			case "3":
-				theSound.volume = 0.2;
+				theSound.volume = 0.1;
 				break;
 			case "4":
-				theSound.volume = 0.23;
+				theSound.volume = 0.15;
 				break;
 			default:
-				theSound.volume = 0.12;
+				theSound.volume = 0.05;
 				break;
 		}
 		theSound.play();
@@ -361,5 +361,5 @@ function setDefaultOptions() {
 	localStorage.setItem("volumeChosen", 1);
 	localStorage.setItem("textSpeedChosen", 2);
 	localStorage.setItem("isSoundEffectActif", true);
-	localStorage.setItem("userLife", 1);
+	localStorage.setItem("userLife", 5);
 }

@@ -43,7 +43,7 @@ setTimeout(function () {
 													options[i].addEventListener("click", () => {
 														dialogActualisation("Chevrette", `Merci ${localStorage.getItem("userName")}, tous les habitants de Saint-Rémy te sont reconnaissants.`, ">");
 														document.getElementById(">").addEventListener("click", () => {
-															dialogActualisation("Chevrette", "Pour débuter ta quête, nous devrions nous rendre à l’ancien collège pour trouver des informations, là ou tout à commencer…", ">");
+															dialogActualisation("Chevrette", "Pour débuter ta quête, nous devrions nous rendre à l’ancien collège pour trouver des informations, là ou tout à commencé…", ">");
 															document.getElementById(">").addEventListener("click", () => {
 																location.href = "../chapter_2/index1-2.html";
 															});

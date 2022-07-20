@@ -1,8 +1,23 @@
-const userName = localStorage.getItem("userName");
-const userLife = localStorage.getItem("userLife");
-const userDecision = localStorage.getItem("userDecision");
+// User info reset
+let userName;
+let userLife;
+let userDecision;
 
-const isEdelistAlive = localStorage.getItem("isEdelistAlive");
+let textSpeedChosen;
+let volumeChosen;
+let isSoundEffectActif;
+let chosenDog;
+let isEdelistAlive;
+
+localStorage.getItem("userName") ? (userName = localStorage.getItem("userName")) : localStorage.setItem("userName", "Denis");
+localStorage.getItem("userLife") ? (userLife = localStorage.getItem("userLife")) : localStorage.setItem("userLife", "5");
+localStorage.getItem("userDecision") ? (userDecision = localStorage.getItem("userDecision")) : localStorage.setItem("userDecision", "0");
+localStorage.getItem("textSpeedChosen") ? (textSpeedChosen = localStorage.getItem("textSpeedChosen")) : localStorage.setItem("textSpeedChosen", "2");
+localStorage.getItem("volumeChosen") ? (volumeChosen = localStorage.getItem("volumeChosen")) : localStorage.setItem("volumeChosen", "1");
+localStorage.getItem("isSoundEffectActif") ? (isSoundEffectActif = localStorage.getItem("isSoundEffectActif")) : localStorage.setItem("isSoundEffectActif", true);
+localStorage.getItem("chosenDog") ? (chosenDog = localStorage.getItem("chosenDog")) : localStorage.setItem("chosenDog", "Sebastien");
+
+localStorage.getItem("isEdelistAlive") ? (isEdelistAlive = localStorage.getItem("isEdelistAlive")) : localStorage.setItem("isEdelistAlive", true);
 
 // Calculate user's karma
 function refreshUserDecision(val) {

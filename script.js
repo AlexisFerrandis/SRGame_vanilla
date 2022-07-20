@@ -1,4 +1,6 @@
 // Display options and chapters container
+let userName;
+localStorage.getItem("userName") ? (userName = localStorage.getItem("userName")) : (userName = "George");
 window.onload = document.body.innerHTML +=
 	`
 <div id="parameterContainer">
@@ -7,6 +9,8 @@ window.onload = document.body.innerHTML +=
         <div id="closeOptBtn">X</div>
         <div class="parameter-display>
             <div style="background-color:#212529; padding: 1rem 1.2rem 1rem 1rem;width:calc(100% + 8px)">
+                <label for="changeName">Changer de nom</label>
+                <input type="text" id="changeName" placeholder="${userName}">
                 <label for="volumeCtrl" style="color:#fff">Volume</label>
                 <div class="nes-select is-dark">
                     <select required id="volumeCtrl">
@@ -131,6 +135,11 @@ document.getElementById("homeOptionsBtn").addEventListener("click", () => {
 document.getElementById("closeOptBtn").addEventListener("click", () => {
 	playSoundEffect("menu-click.wav");
 	document.getElementById("parameterContainer").style.display = "none";
+});
+
+// Name change
+document.getElementById("changeName").addEventListener("input", () => {
+	localStorage.setItem("userName", document.getElementById("changeName").value);
 });
 
 // Volume controler

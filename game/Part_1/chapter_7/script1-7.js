@@ -29,7 +29,7 @@ document.getElementById(">").addEventListener("click", () => {
 								document.getElementById(">").addEventListener("click", () => {
 									dialogActualisation("Violight", `Et le temps presse.`, ">");
 									document.getElementById(">").addEventListener("click", () => {
-										dialogActualisation("Violight", `Laissez-moi-vous compter l’histoire du Tébébrement.`, ">");
+										dialogActualisation("Violight", `Laissez-moi-vous compter l’histoire du Ténébrement.`, ">");
 										document.getElementById(">").addEventListener("click", () => {
 											location.href = "../chapter_7-story/index1-7-story.html";
 										});

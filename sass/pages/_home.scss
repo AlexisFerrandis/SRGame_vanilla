@@ -42,7 +42,11 @@ h1 {
 	display: flex;
 	justify-content: center;
 }
-
+#changeName {
+	margin-bottom: 1em;
+	padding: 4px;
+	color: black;
+}
 footer {
 	display: flex;
 	flex-direction: column;
